@@ -1,0 +1,5800 @@
+{
+		"id": "po_plan_ViniboxRun",
+		"href": "/eoc/ecmRT/v2/productOffering/po_plan_ViniboxRun?requestDate=2020-08-25T00:00:00Z",
+		"versions": [
+			{
+				"id": "po_plan_ViniboxRun",
+				"externalIdentifiers": [
+					{
+						"externalId": "JSON",
+						"externalsource": "RADIUS",
+						"externalidvalue": "{\"profileQos\":\"v:Vinibox10240_2048\", \"uploadQos\":\"ch_Upload\", \"downloadQos\":\"ch_Download\"}"
+					}
+				],
+				"name": "Vinibox Run",
+				"description": "Offre Tripleplay (Internet, Télephonie et Télévision sur IP). Internet Fibre illimité jusqu'à 30 Mb/s (jusqu'à 3 Mb/s en débit montant). Quota d'appels à l'international. Appels illimités entre box.",
+				"validFor": {
+					"startDateTime": "2020-04-08T00:00:00.000Z"
+				},
+				"isComposite": false,
+				"specificationType": "ProductOffering",
+				"specificationSubtype": "Plan",
+				"family": "Internet",
+				"category": "Service",
+				"sellIndicator": true,
+				"sharedIndicator": false,
+				"characteristics": [
+					{
+						"id": "ch_DateFinDEngagement",
+						"versions": [
+							{
+								"id": "ch_DateFinDEngagement",
+								"name": "Date Fin d’engagement",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"type": "pscmCharacteristicAttribute",
+								"valueType": "Date",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"valueType": "Date"
+									}
+								],
+								"properties": [
+									{
+										"value": "CONF",
+										"isSelected": true
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								],
+								"customProperties": [
+									{
+										"id": "userGenericProperty",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"propertySpecification": {
+											"id": "cbioUserGenericProperties"
+										},
+										"property": [
+											{
+												"id": "displayOnInvoice",
+												"value": "1"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "ch_Download",
+						"versions": [
+							{
+								"id": "ch_Download",
+								"name": "Download",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "MANA_DOWN_10240",
+								"type": "pscmCharacteristicAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_DOWN_8192",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_DOWN_8192"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_DOWN_51200",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_DOWN_51200"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_DOWN_512",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_DOWN_512"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_DOWN_4096",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_DOWN_4096"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_DOWN_30720",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_DOWN_30720"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_DOWN_102400",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_DOWN_102400"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_DOWN_10240",
+										"valueType": "CodeTable",
+										"isDefault": true,
+										"displayValue": "MANA_DOWN_10240"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_DOWN_1024",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_DOWN_1024"
+									}
+								],
+								"properties": [
+									{
+										"value": "READONLY",
+										"isSelected": true
+									}
+								],
+								"displayValue": "MANA_DOWN_10240",
+								"characteristicRelations": [
+									{
+										"id": "cmt2734000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "ch_Download",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "ch_DureeDengagment",
+						"versions": [
+							{
+								"id": "ch_DureeDengagment",
+								"name": "Durée d'engagement",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "12",
+								"type": "pscmCharacteristicAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "6",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "6 mois"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "3",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "3 mois"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "24",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "24 mois"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "12",
+										"valueType": "CodeTable",
+										"isDefault": true,
+										"displayValue": "12 mois"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "1",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "1 mois"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "0",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "0 mois"
+									}
+								],
+								"properties": [
+									{
+										"value": "CONF",
+										"isSelected": true
+									}
+								],
+								"displayValue": "12 mois",
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								],
+								"customProperties": [
+									{
+										"id": "userGenericProperty",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"propertySpecification": {
+											"id": "cbioUserGenericProperties"
+										},
+										"property": [
+											{
+												"id": "displayOnInvoice",
+												"value": "1"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "ch_ERMSItemID",
+						"versions": [
+							{
+								"id": "ch_ERMSItemID",
+								"name": "ERMS Item ID",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"type": "pscmCharacteristicAttribute",
+								"valueType": "String",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"valueType": "String"
+									}
+								],
+								"properties": [
+									{
+										"value": "CONF",
+										"isSelected": true
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "ch_Upload",
+						"versions": [
+							{
+								"id": "ch_Upload",
+								"name": "Upload",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "MANA_UP_2048",
+								"type": "pscmCharacteristicAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_51200",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_UP_51200"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_5120",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_UP_5120"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_512",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_UP_512"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_40960",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_UP_40960"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_30720",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_UP_30720"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_3072",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_UP_3072"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_256",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_UP_256"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_20480",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_UP_20480"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_2048",
+										"valueType": "CodeTable",
+										"isDefault": true,
+										"displayValue": "MANA_UP_2048"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MANA_UP_10240",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MANA_UP_10240"
+									}
+								],
+								"properties": [
+									{
+										"value": "READONLY",
+										"isSelected": true
+									}
+								],
+								"displayValue": "MANA_UP_2048",
+								"characteristicRelations": [
+									{
+										"id": "cmt2731000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "ch_Upload",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "ch_DebitVinibox",
+						"versions": [
+							{
+								"id": "ch_DebitVinibox",
+								"name": "Débit Vinibox",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"type": "pscmCharacteristicAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "8MO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "8 Mo"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "4MO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "4 Mo"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "2MO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "2 Mo"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "1MO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "1 Mo"
+									}
+								],
+								"properties": [
+									{
+										"value": "CONF",
+										"isSelected": true
+									}
+								],
+								"characteristicRelations": [
+									{
+										"id": "cmt1637000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "ch_DebitVinibox",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								],
+								"customProperties": [
+									{
+										"id": "userGenericProperty",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"propertySpecification": {
+											"id": "cbioUserGenericProperties"
+										},
+										"property": [
+											{
+												"id": "displayOnInvoice",
+												"value": "1"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "ch_Gamme",
+						"versions": [
+							{
+								"id": "ch_Gamme",
+								"name": "Gamme",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"type": "pscmCharacteristicAttribute",
+								"valueType": "String",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"valueType": "String"
+									}
+								],
+								"properties": [
+									{
+										"value": "CONF",
+										"isSelected": true
+									}
+								],
+								"characteristicRelations": [
+									{
+										"id": "cmt1638000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "ch_Gamme",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "instance_state",
+						"versions": [
+							{
+								"id": "instance_state",
+								"name": "Instance State",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"type": "lifeCycle",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TERMINATED",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "TERMINATED"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SUSPENDED",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "SUSPENDED"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NEW",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NEW"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MIGRATED",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MIGRATED"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ACTIVE",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "ACTIVE"
+									}
+								],
+								"properties": [
+									{
+										"value": "CONF",
+										"isSelected": true
+									}
+								],
+								"characteristicRelations": [
+									{
+										"id": "cmt1641000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "instance_state",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "reasonCode",
+						"versions": [
+							{
+								"id": "reasonCode",
+								"name": "Reason Code",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"type": "pscmTechnicalAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DTKO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Takeover "
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEFPC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Fin de prise en charge"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEFDL",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Fin de location"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEEDS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Erreur de saisie"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DECEO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Courrier envoyÃ© par un autre opÃ©rateur"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DERDV",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Rejet de Vini"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEMEX",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Meilleure expÃ©rience Client"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEMCO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Meilleure couverture"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEOPA",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Offre plus attractive"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEPPI",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Prix plus intÃ©ressant"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEMNC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Motif non communiquÃ©"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DERPE",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Raisons personnelles"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEQDR",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "QualitÃ© du rÃ©seau / zone non couverte"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DESPO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Pas satisfait par l'offre"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEMVP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Migration vers PrÃ©payÃ©"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEMEC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Mauvaise expÃ©rience client"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEFLP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Fin de location ou de prise en charge"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEFUT",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Faible utilisation "
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEDFI",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "DifficultÃ©s financiÃ¿res"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DESRE",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "DÃ©sabonnement-rÃ©abonnement"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEFPE",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Faillite personnelle"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "IMOFI",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Motif financier Internet"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "IDEME",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Déménagement Internet"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "IVACA",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Vacances Internet"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "IAUTR",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Suspension du Service - Autre Internet"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MAUTR",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Suspension du Service - Autre Mobile"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TEDEC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Décès "
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TAUTR",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Suspension Temporaire du Service¿Autre"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TMOFI",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Motif financier"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TDEME",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Déménagement"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TVACA",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Vacances"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SAUTR",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Suspension du Service - Autre"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SFAIU",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Faible utilisation"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MTELC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Téléphone cassé ou en panne"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MVOLP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Vol ou perte"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MCGAP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Modif des CGA possibilitÃ© de rÃ©silier"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEPDF",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Départ Définitif"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MRPEG",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Échange d'équipement sous garantie"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DRPEG",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Échange d'équipement"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "REPL",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Replacement"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SRPCF",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Changement de format"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SRPGR",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Grillée"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SRPVP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Vol ou Perte"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SRPDF",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Défectueuse"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEJUR",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Autre cas de force majeure"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEACC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "DÃ©mÃ©nagement Ã¿ une zone non couverte"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEINC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Incarcération"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEHOS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Raison mÃ©dicale"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEDEC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Décès"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEJUD",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Redressement / liquidation judiciaire"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEFP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Chomage (rupture CDI)"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TPRES",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Terminate product and deassign resources"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TKOCS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Takeover for CS controlled contracts"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TKOBS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Takeover for BSCS controlled contracts"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "EXCHA",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "optional product exchange: activation"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "EXCHD",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "optional product exchange: deactivation"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "UBLCK",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "unblocked"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TBLCK",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "temporary blocked"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "FAIL",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "failed"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SUCC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "success"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "CANC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "canceled"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "FORW",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "forwarded"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "REJEC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "rejected"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "POSTP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "postponed"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ACCEP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "accepted"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "INIT",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "initiated"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "OVDRD",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "deactivation overdraft clearance"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "OVDRA",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "activation overdraft clearance"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DUNND",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "IX Collections deactivation"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DUNNA",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "IX Collections activation"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TKO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "TAKEOVER"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "INTST",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "interested"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ONHLD",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "onhold"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "REACT",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "reactivation"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "DEACT",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "deactivation"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SUSP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "suspension"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ACT",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "activation"
+									}
+								],
+								"properties": [
+									{
+										"value": "CONF",
+										"isSelected": true
+									},
+									{
+										"value": "READONLY",
+										"isSelected": true
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								],
+								"customProperties": [
+									{
+										"id": "reasonCode",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"propertySpecification": {
+											"id": "cbioMetadataGeneric"
+										},
+										"property": [
+											{
+												"id": "provisionToBSCS",
+												"value": "0"
+											},
+											{
+												"id": "publishToBSCS",
+												"value": "0"
+											},
+											{
+												"id": "mandatoryOnProvisioningToBSCS"
+											},
+											{
+												"id": "isBSCSMandatory"
+											},
+											{
+												"id": "isBSCSFinal"
+											},
+											{
+												"id": "isBSCSReadOnly"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "specificationSubSubtype",
+						"versions": [
+							{
+								"id": "specificationSubSubtype",
+								"name": "Product SubType",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "Vinibox On Fiber",
+								"type": "pscmSystemAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Yatch",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Yatch"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Voice Line",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Voice Line"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Viti",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Viti"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Vinibox On Fiber",
+										"valueType": "CodeTable",
+										"isDefault": true,
+										"displayValue": "Vinibox On Fiber"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Vinibox On Copper",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Vinibox On Copper"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ViniMail",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "ViniMail"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Vini Tempo",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Vini Tempo"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Vini Open",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Vini Open"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Vini Like",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Vini Like"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TvSat Elite",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "TvSat Elite"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TvSat Basic",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "TvSat Basic"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TV",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "TV"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Suspension",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Suspension"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Social Media",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Social Media"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Security",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Security"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SPB",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "SPB"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SPA",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "SPA"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SMS Entreprise",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "SMS Entreprise"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "SMS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "SMS"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Premium Ed Spéciale",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Premium Ed Spéciale"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Premium",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Premium"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Optimum",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Optimum"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "OptCompte",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "OptCompte"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "MMS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "MMS"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "M2M",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "M2M"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Ligne Ordinaire",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Ligne Ordinaire"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Ligne De Vie",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Ligne De Vie"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Izi Plus",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Izi Plus"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Izi",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Izi"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Internet Mobile Only",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Internet Mobile Only"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Internet",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Internet"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "International",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "International"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "IDC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "IDC"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Gift Voice",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Gift Voice"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Gift SMS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Gift SMS"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Gift Internet",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Gift Internet"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Gift",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Gift"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Feature",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Feature"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "FAF",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "FAF"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Equipment",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Equipment"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Digital API",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Digital API"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Community",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Community"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Collectivites",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Collectivites"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Channel Package",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Channel Package"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Channel",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Channel"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Boost",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Boost"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Bonus",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Bonus"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Blocage",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Blocage"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Barring",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Barring"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "App",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "App"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ADMINPO_MANUAL",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Admin Added Manually"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ADMINPO",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Admin"
+									}
+								],
+								"displayValue": "Vinibox On Fiber",
+								"characteristicRelations": [
+									{
+										"id": "cmt1648000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "specificationSubSubtype",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "tariffTimeTimeZoneType",
+						"versions": [
+							{
+								"id": "tariffTimeTimeZoneType",
+								"name": "TimeZone Type",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "STZ",
+								"type": "pscmSystemAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "HTZ",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "The subscribers Home Time Zone"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "CTZ",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "The subscribers Current Time Zone"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "STZ",
+										"valueType": "CodeTable",
+										"isDefault": true,
+										"displayValue": "The System Time Zone"
+									}
+								],
+								"displayValue": "The System Time Zone",
+								"characteristicRelations": [
+									{
+										"id": "cmt1650000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "tariffTimeTimeZoneType",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "reactivationRetentionPeriod",
+						"versions": [
+							{
+								"id": "reactivationRetentionPeriod",
+								"name": "Reactivation Retention Period",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "30",
+								"type": "pscmUserAttribute",
+								"valueType": "Number",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "30",
+										"valueType": "Number",
+										"isDefault": true,
+										"displayValue": "30"
+									}
+								],
+								"displayValue": "30",
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								],
+								"customProperties": [
+									{
+										"id": "reactivationRetentionPeriod",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"propertySpecification": {
+											"id": "cbioMetadataGeneric"
+										},
+										"property": [
+											{
+												"id": "provisionToBSCS",
+												"value": "0"
+											},
+											{
+												"id": "publishToBSCS",
+												"value": "0"
+											},
+											{
+												"id": "mandatoryOnProvisioningToBSCS"
+											},
+											{
+												"id": "isBSCSMandatory"
+											},
+											{
+												"id": "isBSCSFinal"
+											},
+											{
+												"id": "isBSCSReadOnly"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "MVNO",
+						"versions": [
+							{
+								"id": "MVNO",
+								"name": "MVNO",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"type": "pscmUserAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "2",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "OTI Busines Unit"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "1",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Default Business Unit"
+									}
+								],
+								"characteristicRelations": [
+									{
+										"id": "cmt1636000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "MVNO",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "chargingEngine",
+						"versions": [
+							{
+								"id": "chargingEngine",
+								"name": "Charging Engine",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "CS",
+								"type": "pscmUserAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "CS",
+										"valueType": "CodeTable",
+										"isDefault": true,
+										"displayValue": "Charging system-rated"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "BSCS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "BSCS-rated"
+									}
+								],
+								"properties": [
+									{
+										"value": "ReadOnlyInNewVersions",
+										"isSelected": true
+									}
+								],
+								"displayValue": "Charging system-rated",
+								"characteristicRelations": [
+									{
+										"id": "cmt1639000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "chargingEngine",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "market",
+						"versions": [
+							{
+								"id": "market",
+								"name": "Market",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "INT",
+								"type": "pscmUserAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "TVS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "TV Satellite"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "INT",
+										"valueType": "CodeTable",
+										"isDefault": true,
+										"displayValue": "Internet"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ISD",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "CDS - Convergent Digital Service market"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "GSM",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "GSM"
+									}
+								],
+								"properties": [
+									{
+										"value": "ReadOnlyInNewVersions",
+										"isSelected": true
+									}
+								],
+								"displayValue": "Internet",
+								"characteristicRelations": [
+									{
+										"id": "cmt1643000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "market",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "productTechnicalType",
+						"versions": [
+							{
+								"id": "productTechnicalType",
+								"name": "Product Technical Type",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "OPTIONAL",
+								"type": "pscmUserAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "OPTIONAL",
+										"valueType": "CodeTable",
+										"isDefault": true,
+										"displayValue": "Optional"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "BASIC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Basic"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ADMINISTRATIVE",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Administrative"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "ADDON",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Add-on"
+									}
+								],
+								"properties": [
+									{
+										"value": "READONLY",
+										"isSelected": true
+									}
+								],
+								"displayValue": "Optional",
+								"characteristicRelations": [
+									{
+										"id": "cmt1645000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "productTechnicalType",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "ratePlans",
+						"versions": [
+							{
+								"id": "ratePlans",
+								"name": "Rate Plans",
+								"validFor": {
+									"startDateTime": "2020-04-08T00:00:00.000Z"
+								},
+								"value": "NVIBO",
+								"type": "pscmUserAttribute",
+								"valueType": "CodeTable",
+								"characteristicValues": [
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "VINID",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "ViniDomain"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NVITI",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA VitiOra"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NOASE",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA SMS Entreprise"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NOAWW",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "WebconsoWebvoscomsFPartagée"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NADSL",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA Adsl "
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NOATV",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA TV Satellite"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NVIBO",
+										"valueType": "CodeTable",
+										"isDefault": true,
+										"displayValue": "NOA ViniBox"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NTFCS",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA Téléphonie Fixe CSC"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NOAMP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA Mobile Postpaid"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NOATY",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "TV Satellite Yatch"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NOATC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "TV Satellite Collectivites"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NUSED",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "RP FIXE NOT USED"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "VINIM",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "ViniMail"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "PRPOF",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA Mobile Prepaid"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NOAIP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA Internet Prepaid"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NOAIM",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA Internet Postpaid"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "NOAOC",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "NOA Object Connect"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "FINRP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Finance Handling Charges"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "CBCPR",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "CBiO Prepaid Basic"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "CBCPB",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "CBiO Postpaid Basic"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "CBPBR",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "CBiO BSCS Postpaid Basic"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "CCPRP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "IPC: CCP Rate Plan"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "Z020",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "Z020 - CostControl (Postpaid)"
+									},
+									{
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"value": "OCCRP",
+										"valueType": "CodeTable",
+										"isDefault": false,
+										"displayValue": "OCC Rateplan"
+									}
+								],
+								"displayValue": "NOA ViniBox",
+								"characteristicRelations": [
+									{
+										"id": "cmt1646000",
+										"validFor": {
+											"startDateTime": "2020-04-08T00:00:00.000Z"
+										},
+										"relationType": "MapTo",
+										"relationPath": "po_plan_ViniboxRun.ps_ViniboxRun[reserved_0_PO_to_PS]",
+										"targetSpecificationId": "ps_ViniboxRun",
+										"targetCharacteristicId": "ratePlans",
+										"targetSpecificationType": "ProductSpecification"
+									}
+								],
+								"propertiesPermissions": [
+									{
+										"id": "perm_mandatory",
+										"type": "mandatory",
+										"isSelected": false
+									},
+									{
+										"id": "perm_hidden",
+										"type": "hidden",
+										"isSelected": false
+									},
+									{
+										"id": "perm_readonly",
+										"type": "readonly",
+										"isSelected": false
+									}
+								]
+							}
+						]
+					}
+				],
+				"associations": [
+					{
+						"targetSpecificationId": "po_opt_ModemVinibox",
+						"href": "/eoc/ecmRT/v2/productOffering/po_opt_ModemVinibox?requestDate=2020-08-25T00:00:00Z",
+						"targetSpecificationType": "ProductOffering",
+						"targetType": "Product",
+						"associationType": "autoInclude",
+						"minQuantity": 0,
+						"maxQuantity": 0,
+						"name": "Modem Vinibox",
+						"description": "Modem Vinibox",
+						"isComposite": false,
+						"specificationSubtype": "Equipment",
+						"family": "Internet",
+						"category": "Sale",
+						"sellIndicator": true,
+						"sharedIndicator": false,
+						"reuseRelations": [
+							{
+								"id": "po_opt_MonModem"
+							},
+							{
+								"id": "po_opt_ViniboxReutilise"
+							}
+						],
+						"ProductSubType": "Internet"
+					},
+					{
+						"targetSpecificationId": "po_opt_SupporteeEnFibre",
+						"href": "/eoc/ecmRT/v2/productOffering/po_opt_SupporteeEnFibre?requestDate=2020-08-25T00:00:00Z",
+						"targetSpecificationType": "ProductOffering",
+						"targetType": "Product",
+						"associationType": "autoInclude",
+						"minQuantity": 0,
+						"maxQuantity": 0,
+						"name": "Supportée sur Fibre",
+						"description": "Supportée sur Fibre",
+						"isComposite": false,
+						"specificationSubtype": "Support",
+						"sellIndicator": false,
+						"sharedIndicator": false,
+						"incompatibleRelations": [
+							{
+								"id": "po_plan_ViniboxMove"
+							},
+							{
+								"id": "po_plan_ViniboxStart"
+							}
+						]
+					}
+				],
+				"productOfferingPrices": [
+					{
+						"id": "CTPenalty_ViniboxRun",
+						"versions": [
+							{
+								"id": "CTPenalty_ViniboxRun",
+								"plaId": "CTPenalty",
+								"popType": "One-Time",
+								"frequency": "O",
+								"price": {
+									"amount": 0E-9,
+									"units": {
+										"code": "XPF",
+										"name": "Comptoirs FranÃ§ais du Pacifique Francs"
+									}
+								},
+								"characteristics": [
+									{
+										"id": "EVENTCODE",
+										"versions": [
+											{
+												"id": "EVENTCODE",
+												"name": "Event Code",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "20001",
+												"valueType": "String",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "20001",
+														"valueType": "String",
+														"isDefault": true,
+														"displayValue": "20001"
+													}
+												],
+												"displayValue": "20001",
+												"valueTypeSpecification": {
+													"id": "EVENTCODE"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "EVENTDESCRIPTION",
+										"versions": [
+											{
+												"id": "EVENTDESCRIPTION",
+												"name": "Event Description",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "Pénalité d’Engagement",
+												"valueType": "String",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "Pénalité d’Engagement",
+														"valueType": "String",
+														"isDefault": true,
+														"displayValue": "Pénalité d’Engagement"
+													}
+												],
+												"displayValue": "Pénalité d’Engagement",
+												"valueTypeSpecification": {
+													"id": "EVENTDESCRIPTION"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "PriceType",
+										"versions": [
+											{
+												"id": "PriceType",
+												"name": "PriceType",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "OCC",
+												"valueType": "String",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "OCC",
+														"valueType": "String",
+														"isDefault": true,
+														"displayValue": "OCC"
+													}
+												],
+												"properties": [
+													{
+														"value": "CONF",
+														"isSelected": true
+													}
+												],
+												"displayValue": "OCC",
+												"valueTypeSpecification": {
+													"id": "PriceType"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "skipCCSPublish",
+										"versions": [
+											{
+												"id": "skipCCSPublish",
+												"name": "skipCCSPublish",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "1",
+												"type": "pscmInternalAttribute",
+												"valueType": "Boolean",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "0",
+														"valueType": "Boolean",
+														"isDefault": false,
+														"displayValue": "false"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "1",
+														"valueType": "Boolean",
+														"isDefault": true,
+														"displayValue": "true"
+													}
+												],
+												"properties": [
+													{
+														"value": "READONLY",
+														"isSelected": true
+													}
+												],
+												"displayValue": "true",
+												"valueTypeSpecification": {
+													"id": "skipCCSPublish"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									}
+								],
+								"markup": 0.00
+							}
+						]
+					},
+					{
+						"id": "CTPenalty_ViniboxRun",
+						"versions": [
+							{
+								"id": "CTPenalty_ViniboxRun",
+								"plaId": "CTPenalty",
+								"popType": "One-Time",
+								"frequency": "O",
+								"price": {
+									"amount": 0E-9,
+									"units": {
+										"code": "XPF",
+										"name": "Comptoirs FranÃ§ais du Pacifique Francs"
+									}
+								},
+								"characteristics": [
+									{
+										"id": "EVENTCODE",
+										"versions": [
+											{
+												"id": "EVENTCODE",
+												"name": "Event Code",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "20001",
+												"valueType": "String",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "20001",
+														"valueType": "String",
+														"isDefault": true,
+														"displayValue": "20001"
+													}
+												],
+												"displayValue": "20001",
+												"valueTypeSpecification": {
+													"id": "EVENTCODE"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "EVENTDESCRIPTION",
+										"versions": [
+											{
+												"id": "EVENTDESCRIPTION",
+												"name": "Event Description",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "Pénalité d’Engagement",
+												"valueType": "String",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "Pénalité d’Engagement",
+														"valueType": "String",
+														"isDefault": true,
+														"displayValue": "Pénalité d’Engagement"
+													}
+												],
+												"displayValue": "Pénalité d’Engagement",
+												"valueTypeSpecification": {
+													"id": "EVENTDESCRIPTION"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "PriceType",
+										"versions": [
+											{
+												"id": "PriceType",
+												"name": "PriceType",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "OCC",
+												"valueType": "String",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "OCC",
+														"valueType": "String",
+														"isDefault": true,
+														"displayValue": "OCC"
+													}
+												],
+												"properties": [
+													{
+														"value": "CONF",
+														"isSelected": true
+													}
+												],
+												"displayValue": "OCC",
+												"valueTypeSpecification": {
+													"id": "PriceType"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "skipCCSPublish",
+										"versions": [
+											{
+												"id": "skipCCSPublish",
+												"name": "skipCCSPublish",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "1",
+												"type": "pscmInternalAttribute",
+												"valueType": "Boolean",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "0",
+														"valueType": "Boolean",
+														"isDefault": false,
+														"displayValue": "false"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "1",
+														"valueType": "Boolean",
+														"isDefault": true,
+														"displayValue": "true"
+													}
+												],
+												"properties": [
+													{
+														"value": "READONLY",
+														"isSelected": true
+													}
+												],
+												"displayValue": "true",
+												"valueTypeSpecification": {
+													"id": "skipCCSPublish"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									}
+								],
+								"markup": 0.00
+							}
+						]
+					},
+					{
+						"id": "CTInternetPamVR",
+						"versions": [
+							{
+								"id": "CTInternetPamVR",
+								"plaId": "CTInternetPam",
+								"popType": "Recurring",
+								"frequency": "M",
+								"price": {
+									"amount": 0E-9,
+									"units": {
+										"code": "XPF",
+										"name": "Comptoirs FranÃ§ais du Pacifique Francs"
+									}
+								},
+								"characteristics": [
+									{
+										"id": "pamClassId",
+										"versions": [
+											{
+												"id": "pamClassId",
+												"name": "pamClassId",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "5002",
+												"type": "pscmUserAttribute",
+												"valueType": "String",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "5002",
+														"valueType": "String",
+														"isDefault": true,
+														"displayValue": "5002"
+													}
+												],
+												"properties": [
+													{
+														"value": "READONLY",
+														"isSelected": true
+													}
+												],
+												"displayValue": "5002",
+												"valueTypeSpecification": {
+													"id": "pamClassId"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "pamScheduleType",
+										"versions": [
+											{
+												"id": "pamScheduleType",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "Fixed",
+												"valueType": "CodeTable",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "POAssignment",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "POAssignment"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "Fixed",
+														"valueType": "CodeTable",
+														"isDefault": true,
+														"displayValue": "Fixed"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "BillCycle",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "BillCycle"
+													}
+												],
+												"displayValue": "Fixed",
+												"valueTypeSpecification": {
+													"id": "pamScheduleType"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "schedulerIDMonthly",
+										"versions": [
+											{
+												"id": "schedulerIDMonthly",
+												"name": "schedulerIDMonthly",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "10",
+												"type": "pscmUserAttribute",
+												"valueType": "String",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "10",
+														"valueType": "String",
+														"isDefault": true,
+														"displayValue": "10"
+													}
+												],
+												"properties": [
+													{
+														"value": "ReadOnlyInNewVersions",
+														"isSelected": true
+													}
+												],
+												"displayValue": "10",
+												"valueTypeSpecification": {
+													"id": "schedulerIDMonthly"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt544644000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "csOffer_1600",
+														"targetCharacteristicId": "schedulerIDMonthly",
+														"targetSpecificationType": "ChargingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									}
+								],
+								"markup": 0.00
+							}
+						]
+					},
+					{
+						"id": "CTInternetRecurringVR",
+						"versions": [
+							{
+								"id": "CTInternetRecurringVR",
+								"plaId": "CTInternetRecurrent",
+								"popType": "Recurring",
+								"frequency": "M",
+								"price": {
+									"amount": 8761.000000000,
+									"units": {
+										"code": "XPF",
+										"name": "Comptoirs FranÃ§ais du Pacifique Francs"
+									}
+								},
+								"characteristics": [
+									{
+										"id": "GLA",
+										"versions": [
+											{
+												"id": "GLA",
+												"name": "GL Accounts",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "IFABF",
+												"type": "pscmUserAttribute",
+												"valueType": "CodeTable",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOVBN",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO-Voice Bonus"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MODBN",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO-Data SMS Bonus"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFASC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-TV ABT SCES COMPL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFTIA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-TV IP ABT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFSCC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF SCE COMPLEMENTAIRES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFTHV",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF TRAFIC HF VOIP"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFFIM",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF FAS INSTAL ET MES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MORRC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - RRR RECHARGE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOTIM",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC INTERNET MOBILE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOVDF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - VOIX DANS LE FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOVHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - VOIX HORS FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOFFF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - OFFER FLEET FF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOFRC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - MO FLEET RC"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFFIN",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT - IF FAS INSTAL ET MES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "VITIR",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-FTTH ABT ACCES FTTH VITI"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "VITIO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-FTTH FAS ET AUTRES FRAIS VITI"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOSMR",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO-FORFAIT AJUST SMS PUSH ENTERPRISE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOSMO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO-FRAIS ACCES SMS PUSH ENTERPRISE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFABV",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF ABT IP VDSL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFABF",
+														"valueType": "CodeTable",
+														"isDefault": true,
+														"displayValue": "GL PKG INT-IF ABT IP FIBRE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFABA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF ABT IP ADSL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "DUMMY",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - ONATI DUMMY GL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVSPA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG TVS - TVSAT Produits Annexes"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVSOT",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG TVS - TVSAT One Time Charge"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVSRC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG TVS - TVSAT Recurring Charge"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTAUD",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC AUDIOTEL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTSAF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL VAR TRAFIC SORTANT À FACTU"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTFOR",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTINL",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC INTERNL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTFMO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC FIXE MOB"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTILE",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTIAI",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC INTRA ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTIRI",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC INTER ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOVOD",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Vini Open Data"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOSBO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - SMS Bonus"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MODBO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Data Bonus"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOCFS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - OFFER CFSS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MBCFS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Basic CFSS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MORCC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Recurring Charge"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MORCP",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Recurring Charge Plan"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "LOCAT",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL LOCATION"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "INTIL",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL TRAFIC INTER ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "ALMIX",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL ABT LIGNE MIXTE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "FASSP",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL FAS SERVICE PUBLIC"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "COCFS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL TRAFIC FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CBCFS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL TRAFIC ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "ODFGL",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "ONATI DEFAULT GL PKG"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CRTAA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Rec - TEL AUTRE ABT DIVERS EQUIP"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CRTAS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Rec TEL ABT SERVICE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CDRIA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Rec Inscription Annuaire"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CDRCC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL ABT LIGNE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CDOTC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL FAS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CIAPJ",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Inscription Annuaire PJ"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CIAPB",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Inscription Annuaire PB"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVFRS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG TVS - TVSAT FRAIS RESILIATION & SUSPENS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFAFD",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT - IF AUTRES FRAIS DIVERS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "DRFAF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "DUMMY RRR FAS ET AUTRES FRAIS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTSRO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SMS ROAMING OUT HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTDRO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC DATA ROAMING OUT HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTROH",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC ROAMING OUT HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTSMI",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SMS INTERN HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTMHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SMS HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTDHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC DATA HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTSFO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SCES DS LE FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTSHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SCES HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTVHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC VOIX HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "BPGL1",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "BP GL Account PKG"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "GLUSG",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "Usage Charge Accounts"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "GLREC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "Recurring Charge Accounts"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "GLONE",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "One Time Charge Accounts"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "GL PKG INT-IF ABT IP FIBRE",
+												"valueTypeSpecification": {
+													"id": "GLA"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "TAX",
+										"versions": [
+											{
+												"id": "TAX",
+												"name": "Taxes",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "TVA13",
+												"type": "pscmUserAttribute",
+												"valueType": "CodeTable",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "ZERO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "Zero Tax"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "VAT",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "VAT 10%"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "UST",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "UST 12%"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVANA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "TVA 13% NA"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVA16",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "TVA 16%"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVA13",
+														"valueType": "CodeTable",
+														"isDefault": true,
+														"displayValue": "TVA 13%"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "TVA 13%",
+												"valueTypeSpecification": {
+													"id": "TAX"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt531314000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "TAX",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "INADV",
+										"versions": [
+											{
+												"id": "INADV",
+												"name": "In advance",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "1",
+												"type": "pscmUserAttribute",
+												"valueType": "Boolean",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "0",
+														"valueType": "Boolean",
+														"isDefault": false,
+														"displayValue": "false"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "1",
+														"valueType": "Boolean",
+														"isDefault": true,
+														"displayValue": "true"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "true",
+												"valueTypeSpecification": {
+													"id": "INADV"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt562929000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "INADV",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "PRORAT",
+										"versions": [
+											{
+												"id": "PRORAT",
+												"name": "Prorating indicator",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "Y",
+												"type": "pscmUserAttribute",
+												"valueType": "CodeTable",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "N",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "not prorated"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "Y",
+														"valueType": "CodeTable",
+														"isDefault": true,
+														"displayValue": "Prorated"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "F",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "Fixed"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "Prorated",
+												"valueTypeSpecification": {
+													"id": "PRORAT"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt562928000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "PRORAT",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "SUSIND",
+										"versions": [
+											{
+												"id": "SUSIND",
+												"name": "Billing also during state suspended",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "0",
+												"type": "pscmUserAttribute",
+												"valueType": "Boolean",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "0",
+														"valueType": "Boolean",
+														"isDefault": true,
+														"displayValue": "false"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "1",
+														"valueType": "Boolean",
+														"isDefault": false,
+														"displayValue": "true"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "false",
+												"valueTypeSpecification": {
+													"id": "SUSIND"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt562930000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "SUSIND",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "ZEROAMTREC",
+										"versions": [
+											{
+												"id": "ZEROAMTREC",
+												"name": "Print zero-amount recurring charge",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "1",
+												"type": "pscmUserAttribute",
+												"valueType": "Boolean",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "0",
+														"valueType": "Boolean",
+														"isDefault": false,
+														"displayValue": "false"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "1",
+														"valueType": "Boolean",
+														"isDefault": true,
+														"displayValue": "true"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "true",
+												"valueTypeSpecification": {
+													"id": "ZEROAMTREC"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt562931000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "ZEROAMTREC",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									}
+								],
+								"markup": 0.00
+							}
+						]
+					},
+					{
+						"id": "CTInternetRecurringVR",
+						"versions": [
+							{
+								"id": "CTInternetRecurringVR",
+								"plaId": "CTInternetRecurrent",
+								"popType": "Recurring",
+								"frequency": "M",
+								"price": {
+									"amount": 1138.930000000,
+									"units": {
+										"code": "XPF",
+										"name": "Comptoirs FranÃ§ais du Pacifique Francs"
+									}
+								},
+								"characteristics": [
+									{
+										"id": "GLA",
+										"versions": [
+											{
+												"id": "GLA",
+												"name": "GL Accounts",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "IFABF",
+												"type": "pscmUserAttribute",
+												"valueType": "CodeTable",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOVBN",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO-Voice Bonus"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MODBN",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO-Data SMS Bonus"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFASC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-TV ABT SCES COMPL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFTIA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-TV IP ABT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFSCC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF SCE COMPLEMENTAIRES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFTHV",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF TRAFIC HF VOIP"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFFIM",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF FAS INSTAL ET MES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MORRC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - RRR RECHARGE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOTIM",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC INTERNET MOBILE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOVDF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - VOIX DANS LE FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOVHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - VOIX HORS FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOFFF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - OFFER FLEET FF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOFRC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - MO FLEET RC"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFFIN",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT - IF FAS INSTAL ET MES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "VITIR",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-FTTH ABT ACCES FTTH VITI"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "VITIO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-FTTH FAS ET AUTRES FRAIS VITI"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOSMR",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO-FORFAIT AJUST SMS PUSH ENTERPRISE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOSMO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO-FRAIS ACCES SMS PUSH ENTERPRISE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFABV",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF ABT IP VDSL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFABF",
+														"valueType": "CodeTable",
+														"isDefault": true,
+														"displayValue": "GL PKG INT-IF ABT IP FIBRE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFABA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT-IF ABT IP ADSL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "DUMMY",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - ONATI DUMMY GL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVSPA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG TVS - TVSAT Produits Annexes"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVSOT",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG TVS - TVSAT One Time Charge"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVSRC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG TVS - TVSAT Recurring Charge"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTAUD",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC AUDIOTEL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTSAF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL VAR TRAFIC SORTANT À FACTU"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTFOR",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTINL",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC INTERNL"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTFMO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC FIXE MOB"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTILE",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTIAI",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC INTRA ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TTIRI",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG - TEL TRAFIC INTER ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOVOD",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Vini Open Data"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOSBO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - SMS Bonus"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MODBO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Data Bonus"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MOCFS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - OFFER CFSS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MBCFS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Basic CFSS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MORCC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Recurring Charge"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MORCP",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - Recurring Charge Plan"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "LOCAT",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL LOCATION"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "INTIL",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL TRAFIC INTER ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "ALMIX",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL ABT LIGNE MIXTE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "FASSP",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL FAS SERVICE PUBLIC"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "COCFS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL TRAFIC FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CBCFS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL TRAFIC ILES"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "ODFGL",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "ONATI DEFAULT GL PKG"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CRTAA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Rec - TEL AUTRE ABT DIVERS EQUIP"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CRTAS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Rec TEL ABT SERVICE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CDRIA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Rec Inscription Annuaire"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CDRCC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL ABT LIGNE"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CDOTC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - TEL FAS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CIAPJ",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Inscription Annuaire PJ"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "CIAPB",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG CDS - Inscription Annuaire PB"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVFRS",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG TVS - TVSAT FRAIS RESILIATION & SUSPENS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "IFAFD",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG INT - IF AUTRES FRAIS DIVERS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "DRFAF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "DUMMY RRR FAS ET AUTRES FRAIS"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTSRO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SMS ROAMING OUT HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTDRO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC DATA ROAMING OUT HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTROH",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC ROAMING OUT HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTSMI",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SMS INTERN HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTMHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SMS HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTDHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC DATA HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTSFO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SCES DS LE FORFAIT"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTSHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC SCES HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "MTVHF",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "GL PKG MO - TRAFIC VOIX HF"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "BPGL1",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "BP GL Account PKG"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "GLUSG",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "Usage Charge Accounts"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "GLREC",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "Recurring Charge Accounts"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "GLONE",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "One Time Charge Accounts"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "GL PKG INT-IF ABT IP FIBRE",
+												"valueTypeSpecification": {
+													"id": "GLA"
+												},
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "TAX",
+										"versions": [
+											{
+												"id": "TAX",
+												"name": "Taxes",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "TVA13",
+												"type": "pscmUserAttribute",
+												"valueType": "CodeTable",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "ZERO",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "Zero Tax"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "VAT",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "VAT 10%"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "UST",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "UST 12%"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVANA",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "TVA 13% NA"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVA16",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "TVA 16%"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "TVA13",
+														"valueType": "CodeTable",
+														"isDefault": true,
+														"displayValue": "TVA 13%"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "TVA 13%",
+												"valueTypeSpecification": {
+													"id": "TAX"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt531314000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "TAX",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "INADV",
+										"versions": [
+											{
+												"id": "INADV",
+												"name": "In advance",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "1",
+												"type": "pscmUserAttribute",
+												"valueType": "Boolean",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "0",
+														"valueType": "Boolean",
+														"isDefault": false,
+														"displayValue": "false"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "1",
+														"valueType": "Boolean",
+														"isDefault": true,
+														"displayValue": "true"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "true",
+												"valueTypeSpecification": {
+													"id": "INADV"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt562929000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "INADV",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "PRORAT",
+										"versions": [
+											{
+												"id": "PRORAT",
+												"name": "Prorating indicator",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "Y",
+												"type": "pscmUserAttribute",
+												"valueType": "CodeTable",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "N",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "not prorated"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "Y",
+														"valueType": "CodeTable",
+														"isDefault": true,
+														"displayValue": "Prorated"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "F",
+														"valueType": "CodeTable",
+														"isDefault": false,
+														"displayValue": "Fixed"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "Prorated",
+												"valueTypeSpecification": {
+													"id": "PRORAT"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt562928000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "PRORAT",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "SUSIND",
+										"versions": [
+											{
+												"id": "SUSIND",
+												"name": "Billing also during state suspended",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "0",
+												"type": "pscmUserAttribute",
+												"valueType": "Boolean",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "0",
+														"valueType": "Boolean",
+														"isDefault": true,
+														"displayValue": "false"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "1",
+														"valueType": "Boolean",
+														"isDefault": false,
+														"displayValue": "true"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "false",
+												"valueTypeSpecification": {
+													"id": "SUSIND"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt562930000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "SUSIND",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									},
+									{
+										"id": "ZEROAMTREC",
+										"versions": [
+											{
+												"id": "ZEROAMTREC",
+												"name": "Print zero-amount recurring charge",
+												"validFor": {
+													"startDateTime": "2020-04-08T00:00:00.000Z"
+												},
+												"value": "1",
+												"type": "pscmUserAttribute",
+												"valueType": "Boolean",
+												"characteristicValues": [
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "0",
+														"valueType": "Boolean",
+														"isDefault": false,
+														"displayValue": "false"
+													},
+													{
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"value": "1",
+														"valueType": "Boolean",
+														"isDefault": true,
+														"displayValue": "true"
+													}
+												],
+												"properties": [
+													{
+														"value": "Translatable",
+														"isSelected": true
+													},
+													{
+														"value": "isMandatory",
+														"isSelected": true
+													}
+												],
+												"displayValue": "true",
+												"valueTypeSpecification": {
+													"id": "ZEROAMTREC"
+												},
+												"characteristicRelations": [
+													{
+														"id": "cmt562931000",
+														"validFor": {
+															"startDateTime": "2020-04-08T00:00:00.000Z"
+														},
+														"relationType": "MapTo",
+														"targetSpecificationId": "BSCS_OTIRCI",
+														"targetCharacteristicId": "ZEROAMTREC",
+														"targetSpecificationType": "BillingConfigurationSpec"
+													}
+												],
+												"propertiesPermissions": [
+													{
+														"id": "perm_mandatory",
+														"type": "mandatory",
+														"isSelected": false
+													},
+													{
+														"id": "perm_hidden",
+														"type": "hidden",
+														"isSelected": false
+													},
+													{
+														"id": "perm_readonly",
+														"type": "readonly",
+														"isSelected": false
+													}
+												]
+											}
+										]
+									}
+								],
+								"markup": 0.00
+							}
+						]
+					}
+				],
+				"includeRelations": [
+					{
+						"id": "po_opt_ModemVinibox"
+					},
+					{
+						"id": "po_opt_SupporteeEnFibre"
+					}
+				]
+			}
+		],
+		"AddOnMinMaxCardinalityInfoTable": [
+			{
+				"AddOnItemCode": "po_add_Pass1Go",
+				"MinCardinality": "0.0",
+				"MaxCardinality": "99.0"
+			},
+			{
+				"AddOnItemCode": "po_add_2ndEcran",
+				"DependencyItemCode": "po_plan_ViniboxRun",
+				"MinCardinality": "0.0",
+				"MaxCardinality": "1.0"
+			},
+			{
+				"AddOnItemCode": "po_add_2ndEcran",
+				"DependencyItemCode": "po_plan_ViniboxSprint",
+				"MinCardinality": "0.0",
+				"MaxCardinality": "2.0"
+			}
+		]
+}

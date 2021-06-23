@@ -1,0 +1,5306 @@
+{
+	"productNumber": "ps_ViniboxRun",
+	"name": "Vinibox Run",
+	"description": "Vinibox Run",
+	"validFor": {
+		"startDateTime": "2020-04-08T00:00:00.000Z"
+	},
+	"isComposite": false,
+	"specificationType": "ProductSpecification",
+	"specificationSubtype": "Plan",
+	"family": "Internet",
+	"category": "Service",
+	"sharedIndicator": false,
+	"tariffTimeTimeZoneType": "STZ",
+	"characteristics": [
+		{
+			"id": "ch_DebitVinibox",
+			"versions": [
+				{
+					"id": "ch_DebitVinibox",
+					"name": "Débit Vinibox",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"type": "pscmCharacteristicAttribute",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "8MO",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "8 Mo"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "4MO",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "4 Mo"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "2MO",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "2 Mo"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "1MO",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "1 Mo"
+						}
+					],
+					"properties": [
+						{
+							"value": "CONF",
+							"isSelected": true
+						}
+					],
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ch_Download",
+			"versions": [
+				{
+					"id": "ch_Download",
+					"name": "Download",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"type": "pscmCharacteristicAttribute",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_DOWN_8192",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_DOWN_8192"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_DOWN_51200",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_DOWN_51200"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_DOWN_512",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_DOWN_512"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_DOWN_4096",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_DOWN_4096"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_DOWN_30720",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_DOWN_30720"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_DOWN_102400",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_DOWN_102400"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_DOWN_10240",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_DOWN_10240"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_DOWN_1024",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_DOWN_1024"
+						}
+					],
+					"properties": [
+						{
+							"value": "CONF",
+							"isSelected": true
+						}
+					],
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ch_Gamme",
+			"versions": [
+				{
+					"id": "ch_Gamme",
+					"name": "Gamme",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"type": "pscmCharacteristicAttribute",
+					"valueType": "String",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "String"
+						}
+					],
+					"properties": [
+						{
+							"value": "CONF",
+							"isSelected": true
+						}
+					],
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ch_Upload",
+			"versions": [
+				{
+					"id": "ch_Upload",
+					"name": "Upload",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"type": "pscmCharacteristicAttribute",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_51200",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_51200"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_5120",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_5120"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_512",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_512"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_40960",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_40960"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_30720",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_30720"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_3072",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_3072"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_256",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_256"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_20480",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_20480"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_2048",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_2048"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MANA_UP_10240",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MANA_UP_10240"
+						}
+					],
+					"properties": [
+						{
+							"value": "CONF",
+							"isSelected": true
+						}
+					],
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "instance_state",
+			"versions": [
+				{
+					"id": "instance_state",
+					"name": "Instance State",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"type": "lifeCycle",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "TERMINATED",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "TERMINATED"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "SUSPENDED",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "SUSPENDED"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NEW",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NEW"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MIGRATED",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MIGRATED"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "ACTIVE",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "ACTIVE"
+						}
+					],
+					"properties": [
+						{
+							"value": "CONF",
+							"isSelected": true
+						}
+					],
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "restrictStandAloneProduct",
+			"versions": [
+				{
+					"id": "restrictStandAloneProduct",
+					"name": "Restrict Stand Alone Product",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"value": "0",
+					"type": "pscmSystemAttribute",
+					"valueType": "Boolean",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "0",
+							"valueType": "Boolean",
+							"isDefault": true,
+							"displayValue": "false"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "1",
+							"valueType": "Boolean",
+							"isDefault": false,
+							"displayValue": "true"
+						}
+					],
+					"properties": [
+						{
+							"value": "Restricted",
+							"isSelected": true
+						}
+					],
+					"displayValue": "false",
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "specificationSubSubtype",
+			"versions": [
+				{
+					"id": "specificationSubSubtype",
+					"name": "Product SubType",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"value": "Internet",
+					"type": "pscmSystemAttribute",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Yatch",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Yatch"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Voice Line",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Voice Line"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Viti",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Viti"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Vinibox On Fiber",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Vinibox On Fiber"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Vinibox On Copper",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Vinibox On Copper"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "ViniMail",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "ViniMail"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Vini Tempo",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Vini Tempo"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Vini Open",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Vini Open"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Vini Like",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Vini Like"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "TvSat Elite",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "TvSat Elite"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "TvSat Basic",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "TvSat Basic"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "TV",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "TV"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Suspension",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Suspension"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Social Media",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Social Media"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Security",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Security"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "SPB",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "SPB"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "SPA",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "SPA"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "SMS Entreprise",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "SMS Entreprise"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "SMS",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "SMS"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Premium Ed Spéciale",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Premium Ed Spéciale"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Premium",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Premium"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Optimum",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Optimum"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "OptCompte",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "OptCompte"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "MMS",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "MMS"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "M2M",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "M2M"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Ligne Ordinaire",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Ligne Ordinaire"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Ligne De Vie",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Ligne De Vie"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Izi Plus",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Izi Plus"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Izi",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Izi"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Internet Mobile Only",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Internet Mobile Only"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Internet",
+							"valueType": "CodeTable",
+							"isDefault": true,
+							"displayValue": "Internet"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "International",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "International"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "IDC",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "IDC"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Gift Voice",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Gift Voice"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Gift SMS",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Gift SMS"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Gift Internet",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Gift Internet"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Gift",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Gift"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Feature",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Feature"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "FAF",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "FAF"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Equipment",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Equipment"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Digital API",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Digital API"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Community",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Community"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Collectivites",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Collectivites"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Channel Package",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Channel Package"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Channel",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Channel"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Boost",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Boost"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Bonus",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Bonus"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Blocage",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Blocage"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Barring",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Barring"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "App",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "App"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "ADMINPO_MANUAL",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Admin Added Manually"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "ADMINPO",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Admin"
+						}
+					],
+					"displayValue": "Internet",
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "productTechnicalType",
+			"versions": [
+				{
+					"id": "productTechnicalType",
+					"name": "Product Technical Type",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"value": "OPTIONAL",
+					"type": "pscmUserAttribute",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "OPTIONAL",
+							"valueType": "CodeTable",
+							"isDefault": true,
+							"displayValue": "Optional"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "BASIC",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Basic"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "ADMINISTRATIVE",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Administrative"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "ADDON",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Add-on"
+						}
+					],
+					"properties": [
+						{
+							"value": "READONLY",
+							"isSelected": true
+						}
+					],
+					"displayValue": "Optional",
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "chargingEngine",
+			"versions": [
+				{
+					"id": "chargingEngine",
+					"name": "Charging Engine",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"value": "CS",
+					"type": "pscmUserAttribute",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "CS",
+							"valueType": "CodeTable",
+							"isDefault": true,
+							"displayValue": "Charging system-rated"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "BSCS",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "BSCS-rated"
+						}
+					],
+					"properties": [
+						{
+							"value": "ReadOnlyInNewVersions",
+							"isSelected": true
+						}
+					],
+					"displayValue": "Charging system-rated",
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "market",
+			"versions": [
+				{
+					"id": "market",
+					"name": "Market",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"value": "INT",
+					"type": "pscmUserAttribute",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "TVS",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "TV Satellite"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "INT",
+							"valueType": "CodeTable",
+							"isDefault": true,
+							"displayValue": "Internet"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "ISD",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "CDS - Convergent Digital Service market"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "GSM",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "GSM"
+						}
+					],
+					"properties": [
+						{
+							"value": "ReadOnlyInNewVersions",
+							"isSelected": true
+						}
+					],
+					"displayValue": "Internet",
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ratePlans",
+			"versions": [
+				{
+					"id": "ratePlans",
+					"name": "Rate Plans",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"value": "NVIBO",
+					"type": "pscmUserAttribute",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NOATV",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA TV Satellite"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "PRPOF",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA Mobile Prepaid"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NVITI",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA VitiOra"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NUSED",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "RP FIXE NOT USED"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "VINIM",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "ViniMail"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NOAIP",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA Internet Prepaid"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NVIBO",
+							"valueType": "CodeTable",
+							"isDefault": true,
+							"displayValue": "NOA ViniBox"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NADSL",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA Adsl "
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NTFCS",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA Téléphonie Fixe CSC"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NOATC",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "TV Satellite Collectivites"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NOATY",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "TV Satellite Yatch"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NOASE",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA SMS Entreprise"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "VINID",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "ViniDomain"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NOAIM",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA Internet Postpaid"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NOAWW",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "WebconsoWebvoscomsFPartagée"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NOAOC",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA Object Connect"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "NOAMP",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "NOA Mobile Postpaid"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "OCCRP",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "OCC Rateplan"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "CBPBR",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "CBiO BSCS Postpaid Basic"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "CBCPB",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "CBiO Postpaid Basic"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "CBCPR",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "CBiO Prepaid Basic"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "FINRP",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Finance Handling Charges"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "Z020",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Z020 - CostControl (Postpaid)"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "CCPRP",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "IPC: CCP Rate Plan"
+						}
+					],
+					"displayValue": "NOA ViniBox",
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MVNO",
+			"versions": [
+				{
+					"id": "MVNO",
+					"name": "MVNO",
+					"validFor": {
+						"startDateTime": "2020-04-08T00:00:00.000Z"
+					},
+					"type": "pscmUserAttribute",
+					"valueType": "CodeTable",
+					"characteristicValues": [
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "2",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "OTI Busines Unit"
+						},
+						{
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"value": "1",
+							"valueType": "CodeTable",
+							"isDefault": false,
+							"displayValue": "Default Business Unit"
+						}
+					],
+					"propertiesPermissions": [
+						{
+							"id": "perm_mandatory",
+							"type": "mandatory",
+							"isSelected": false
+						},
+						{
+							"id": "perm_hidden",
+							"type": "hidden",
+							"isSelected": false
+						},
+						{
+							"id": "perm_readonly",
+							"type": "readonly",
+							"isSelected": false
+						}
+					],
+					"customProperties": [
+						{
+							"id": "MVNO",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"propertySpecification": {
+								"id": "cbioMetadataMVNO"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"associations": [
+		{
+			"targetSpecificationId": "cfss_InternetFibre",
+			"href": "/eoc/ecmRT/v2/customerFacingServiceSpecification/cfss_InternetFibre?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CustomerFacingServiceSpec",
+			"targetType": "Service",
+			"associationType": "contains"
+		},
+		{
+			"targetSpecificationId": "cfss_InternetVOIP",
+			"href": "/eoc/ecmRT/v2/customerFacingServiceSpecification/cfss_InternetVOIP?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CustomerFacingServiceSpec",
+			"targetType": "Service",
+			"associationType": "contains"
+		},
+		{
+			"targetSpecificationId": "cfss_IPTV",
+			"href": "/eoc/ecmRT/v2/customerFacingServiceSpecification/cfss_IPTV?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CustomerFacingServiceSpec",
+			"targetType": "Service",
+			"associationType": "contains"
+		},
+		{
+			"targetSpecificationId": "cfss_MonthlyBundInt",
+			"href": "/eoc/ecmRT/v2/customerFacingServiceSpecification/cfss_MonthlyBundInt?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CustomerFacingServiceSpec",
+			"targetType": "Service",
+			"associationType": "contains"
+		},
+		{
+			"targetSpecificationId": "cfss_UnlimitOnnet",
+			"href": "/eoc/ecmRT/v2/customerFacingServiceSpecification/cfss_UnlimitOnnet?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CustomerFacingServiceSpec",
+			"targetType": "Service",
+			"associationType": "contains"
+		},
+		{
+			"targetSpecificationId": "cfss_ViniSpot",
+			"href": "/eoc/ecmRT/v2/customerFacingServiceSpecification/cfss_ViniSpot?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CustomerFacingServiceSpec",
+			"targetType": "Service",
+			"associationType": "contains"
+		},
+		{
+			"targetSpecificationId": "cfss_ViniTV",
+			"href": "/eoc/ecmRT/v2/customerFacingServiceSpecification/cfss_ViniTV?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CustomerFacingServiceSpec",
+			"targetType": "Service",
+			"associationType": "contains"
+		},
+		{
+			"targetSpecificationId": "ch_DebitVinibox",
+			"href": "/eoc/ecmRT/v2/characteristicSpecification/ch_DebitVinibox?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CharacteristicSpecification",
+			"targetType": "Product",
+			"associationType": "Characteristics",
+			"characteristics": [
+				{
+					"id": "specificationType",
+					"versions": [
+						{
+							"id": "specificationType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CSSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "base CSSpecification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CSSType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "base CSSType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "SoftwareResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Software Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecParameter",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Parameter"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecConsequence",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Consequence"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecApplicability",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Applicability"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelObjective",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Objective"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceCandidate",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Candidate"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceFacingServiceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Facing Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceCandidate",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Candidate"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "RecurrenceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Recurrence Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "RMProductOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "RM Product Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductOfferingPrice",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Offering Price"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductBucketSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Bucket Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriorityList",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Priority List"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriceLogicAlgorithmSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Price Logic Algorithm Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriceLogicAlgorithm",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Price Logic Algorithm"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PolicyConfigSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Policy Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PhysicalResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Physical Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "LogicalResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Logical Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "KeyQualityIndicator",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Key Quality Indicator"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "KeyPerformanceIndicator",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Key Performance Indicator"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "FulfillmentConfigSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Fulfillment Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ExtendedLogicAlgorithmSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Extended Logic Algorithm Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ExtendedLogicAlgorithm",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Extended Logic Algorithm"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CustomerFacingServiceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Customer Facing Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ConfigServiceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Config Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CompositeProductSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Composite Product Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ChargingConfigurationSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Charging Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CharacteristicSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Characteristic Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BusinessInteraction",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Business Interaction"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BillingConfigurationSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Billing Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BillingAccountOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Billing Account Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "APISpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "API Specification"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "specificationSubtype",
+					"versions": [
+						{
+							"id": "specificationSubtype",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_resourceType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_resourceType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_productType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_productType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_offerType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_offerType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_characteristicType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_characteristicType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UNI_PAIR",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UNI_PAIR"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UNI",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UNI"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PORT",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "PORT"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "NMI_LOCAL_ACCESS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "NMI_LOCAL_ACCESS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "NID",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "NID"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "MacAddrLimit",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "MacAddrLimit"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "M_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "M_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "L_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "L_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "LOCAL_ACCESS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "LOCAL_ACCESS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "L2CP",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "L2CP"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "H_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "H_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "GlobalEthernet",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "GlobalEthernet"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EXTENDED_WIRING",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EXTENDED_WIRING"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPTREE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPTREE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPLINE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPLINE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPLAN",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPLAN"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVCUNI",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVCUNI"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVC",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVC"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPTREE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPTREE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPLINE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPLINE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPLAN",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPLAN"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CeVlanIdEvcMap",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CeVlanIdEvcMap"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "COMPOSITE_EVC",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "COMPOSITE_EVC"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BUILD_OUT",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "BUILD_OUT"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BANDWIDTH_PROFILE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "BANDWIDTH_PROFILE"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicUsageType",
+					"versions": [
+						{
+							"id": "characteristicUsageType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PSCM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "PSCM"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "OM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "OM"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CPM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CPM"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicType",
+					"versions": [
+						{
+							"id": "characteristicType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UserResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UserResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "SystemResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "SystemResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProviderResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "ProviderResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Definition",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Definition"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicCategory",
+					"versions": [
+						{
+							"id": "characteristicCategory",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Tariff Time",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Tariff Time"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Resource Facing",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Facing"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Customer Facing",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Customer Facing"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "CW_RELATIONTYPE",
+					"versions": [
+						{
+							"id": "CW_RELATIONTYPE",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "String",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"valueType": "String"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"targetSpecificationId": "ch_Download",
+			"href": "/eoc/ecmRT/v2/characteristicSpecification/ch_Download?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CharacteristicSpecification",
+			"targetType": "Product",
+			"associationType": "Characteristics",
+			"characteristics": [
+				{
+					"id": "specificationType",
+					"versions": [
+						{
+							"id": "specificationType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CSSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "base CSSpecification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CSSType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "base CSSType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "SoftwareResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Software Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecParameter",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Parameter"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecConsequence",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Consequence"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecApplicability",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Applicability"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelObjective",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Objective"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceCandidate",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Candidate"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceFacingServiceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Facing Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceCandidate",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Candidate"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "RecurrenceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Recurrence Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "RMProductOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "RM Product Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductOfferingPrice",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Offering Price"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductBucketSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Bucket Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriorityList",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Priority List"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriceLogicAlgorithmSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Price Logic Algorithm Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriceLogicAlgorithm",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Price Logic Algorithm"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PolicyConfigSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Policy Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PhysicalResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Physical Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "LogicalResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Logical Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "KeyQualityIndicator",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Key Quality Indicator"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "KeyPerformanceIndicator",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Key Performance Indicator"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "FulfillmentConfigSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Fulfillment Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ExtendedLogicAlgorithmSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Extended Logic Algorithm Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ExtendedLogicAlgorithm",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Extended Logic Algorithm"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CustomerFacingServiceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Customer Facing Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ConfigServiceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Config Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CompositeProductSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Composite Product Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ChargingConfigurationSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Charging Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CharacteristicSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Characteristic Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BusinessInteraction",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Business Interaction"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BillingConfigurationSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Billing Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BillingAccountOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Billing Account Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "APISpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "API Specification"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "specificationSubtype",
+					"versions": [
+						{
+							"id": "specificationSubtype",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_resourceType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_resourceType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_productType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_productType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_offerType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_offerType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_characteristicType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_characteristicType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UNI_PAIR",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UNI_PAIR"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UNI",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UNI"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PORT",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "PORT"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "NMI_LOCAL_ACCESS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "NMI_LOCAL_ACCESS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "NID",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "NID"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "MacAddrLimit",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "MacAddrLimit"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "M_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "M_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "L_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "L_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "LOCAL_ACCESS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "LOCAL_ACCESS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "L2CP",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "L2CP"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "H_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "H_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "GlobalEthernet",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "GlobalEthernet"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EXTENDED_WIRING",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EXTENDED_WIRING"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPTREE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPTREE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPLINE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPLINE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPLAN",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPLAN"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVCUNI",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVCUNI"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVC",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVC"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPTREE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPTREE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPLINE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPLINE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPLAN",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPLAN"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CeVlanIdEvcMap",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CeVlanIdEvcMap"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "COMPOSITE_EVC",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "COMPOSITE_EVC"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BUILD_OUT",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "BUILD_OUT"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BANDWIDTH_PROFILE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "BANDWIDTH_PROFILE"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicUsageType",
+					"versions": [
+						{
+							"id": "characteristicUsageType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PSCM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "PSCM"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "OM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "OM"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CPM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CPM"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicType",
+					"versions": [
+						{
+							"id": "characteristicType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UserResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UserResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "SystemResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "SystemResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProviderResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "ProviderResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Definition",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Definition"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicCategory",
+					"versions": [
+						{
+							"id": "characteristicCategory",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Tariff Time",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Tariff Time"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Resource Facing",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Facing"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Customer Facing",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Customer Facing"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "CW_RELATIONTYPE",
+					"versions": [
+						{
+							"id": "CW_RELATIONTYPE",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "String",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"valueType": "String"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"targetSpecificationId": "ch_Gamme",
+			"href": "/eoc/ecmRT/v2/characteristicSpecification/ch_Gamme?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CharacteristicSpecification",
+			"targetType": "Product",
+			"associationType": "Characteristics",
+			"characteristics": [
+				{
+					"id": "specificationType",
+					"versions": [
+						{
+							"id": "specificationType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CSSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "base CSSpecification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CSSType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "base CSSType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "SoftwareResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Software Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecParameter",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Parameter"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecConsequence",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Consequence"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecApplicability",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Applicability"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelObjective",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Objective"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceCandidate",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Candidate"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceFacingServiceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Facing Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceCandidate",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Candidate"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "RecurrenceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Recurrence Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "RMProductOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "RM Product Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductOfferingPrice",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Offering Price"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductBucketSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Bucket Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriorityList",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Priority List"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriceLogicAlgorithmSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Price Logic Algorithm Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriceLogicAlgorithm",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Price Logic Algorithm"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PolicyConfigSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Policy Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PhysicalResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Physical Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "LogicalResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Logical Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "KeyQualityIndicator",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Key Quality Indicator"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "KeyPerformanceIndicator",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Key Performance Indicator"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "FulfillmentConfigSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Fulfillment Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ExtendedLogicAlgorithmSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Extended Logic Algorithm Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ExtendedLogicAlgorithm",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Extended Logic Algorithm"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CustomerFacingServiceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Customer Facing Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ConfigServiceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Config Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CompositeProductSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Composite Product Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ChargingConfigurationSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Charging Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CharacteristicSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Characteristic Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BusinessInteraction",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Business Interaction"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BillingConfigurationSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Billing Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BillingAccountOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Billing Account Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "APISpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "API Specification"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "specificationSubtype",
+					"versions": [
+						{
+							"id": "specificationSubtype",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_resourceType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_resourceType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_productType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_productType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_offerType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_offerType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_characteristicType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_characteristicType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UNI_PAIR",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UNI_PAIR"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UNI",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UNI"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PORT",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "PORT"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "NMI_LOCAL_ACCESS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "NMI_LOCAL_ACCESS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "NID",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "NID"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "MacAddrLimit",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "MacAddrLimit"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "M_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "M_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "L_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "L_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "LOCAL_ACCESS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "LOCAL_ACCESS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "L2CP",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "L2CP"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "H_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "H_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "GlobalEthernet",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "GlobalEthernet"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EXTENDED_WIRING",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EXTENDED_WIRING"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPTREE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPTREE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPLINE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPLINE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPLAN",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPLAN"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVCUNI",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVCUNI"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVC",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVC"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPTREE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPTREE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPLINE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPLINE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPLAN",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPLAN"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CeVlanIdEvcMap",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CeVlanIdEvcMap"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "COMPOSITE_EVC",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "COMPOSITE_EVC"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BUILD_OUT",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "BUILD_OUT"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BANDWIDTH_PROFILE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "BANDWIDTH_PROFILE"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicUsageType",
+					"versions": [
+						{
+							"id": "characteristicUsageType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PSCM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "PSCM"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "OM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "OM"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CPM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CPM"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicType",
+					"versions": [
+						{
+							"id": "characteristicType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UserResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UserResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "SystemResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "SystemResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProviderResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "ProviderResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Definition",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Definition"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicCategory",
+					"versions": [
+						{
+							"id": "characteristicCategory",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Tariff Time",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Tariff Time"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Resource Facing",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Facing"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Customer Facing",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Customer Facing"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "CW_RELATIONTYPE",
+					"versions": [
+						{
+							"id": "CW_RELATIONTYPE",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "String",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"valueType": "String"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"targetSpecificationId": "ch_Upload",
+			"href": "/eoc/ecmRT/v2/characteristicSpecification/ch_Upload?requestDate=2020-09-01T00:00:00Z",
+			"targetSpecificationType": "CharacteristicSpecification",
+			"targetType": "Product",
+			"associationType": "Characteristics",
+			"characteristics": [
+				{
+					"id": "specificationType",
+					"versions": [
+						{
+							"id": "specificationType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CSSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "base CSSpecification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CSSType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "base CSSType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "SoftwareResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Software Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecParameter",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Parameter"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecConsequence",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Consequence"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecApplicability",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification Applicability"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceLevelObjective",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Level Objective"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ServiceCandidate",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Service Candidate"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceFacingServiceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Facing Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ResourceCandidate",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Candidate"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "RecurrenceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Recurrence Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "RMProductOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "RM Product Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductOfferingPrice",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Offering Price"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProductBucketSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Product Bucket Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriorityList",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Priority List"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriceLogicAlgorithmSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Price Logic Algorithm Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PriceLogicAlgorithm",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Price Logic Algorithm"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PolicyConfigSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Policy Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PhysicalResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Physical Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "LogicalResourceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Logical Resource Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "KeyQualityIndicator",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Key Quality Indicator"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "KeyPerformanceIndicator",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Key Performance Indicator"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "FulfillmentConfigSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Fulfillment Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ExtendedLogicAlgorithmSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Extended Logic Algorithm Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ExtendedLogicAlgorithm",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Extended Logic Algorithm"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CustomerFacingServiceSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Customer Facing Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ConfigServiceSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Config Service Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CompositeProductSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Composite Product Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ChargingConfigurationSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Charging Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CharacteristicSpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Characteristic Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BusinessInteraction",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Business Interaction"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BillingConfigurationSpec",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Billing Configuration Specification"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BillingAccountOffering",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Billing Account Offering"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "APISpecification",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "API Specification"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "specificationSubtype",
+					"versions": [
+						{
+							"id": "specificationSubtype",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_resourceType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_resourceType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_productType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_productType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_offerType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_offerType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "pscm_characteristicType",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "pscm_characteristicType"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UNI_PAIR",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UNI_PAIR"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UNI",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UNI"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PORT",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "PORT"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "NMI_LOCAL_ACCESS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "NMI_LOCAL_ACCESS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "NID",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "NID"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "MacAddrLimit",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "MacAddrLimit"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "M_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "M_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "L_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "L_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "LOCAL_ACCESS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "LOCAL_ACCESS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "L2CP",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "L2CP"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "H_CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "H_CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "GlobalEthernet",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "GlobalEthernet"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EXTENDED_WIRING",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EXTENDED_WIRING"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPTREE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPTREE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPLINE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPLINE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVPLAN",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVPLAN"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVCUNI",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVCUNI"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EVC",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EVC"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPTREE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPTREE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPLINE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPLINE"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "EPLAN",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "EPLAN"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CoS",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CoS"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CeVlanIdEvcMap",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CeVlanIdEvcMap"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "COMPOSITE_EVC",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "COMPOSITE_EVC"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BUILD_OUT",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "BUILD_OUT"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "BANDWIDTH_PROFILE",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "BANDWIDTH_PROFILE"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicUsageType",
+					"versions": [
+						{
+							"id": "characteristicUsageType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "PSCM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "PSCM"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "OM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "OM"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "CPM",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "CPM"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicType",
+					"versions": [
+						{
+							"id": "characteristicType",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "UserResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "UserResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "SystemResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "SystemResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "ProviderResource",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "ProviderResource"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Definition",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Definition"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "characteristicCategory",
+					"versions": [
+						{
+							"id": "characteristicCategory",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "CodeTable",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Tariff Time",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Tariff Time"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Resource Facing",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Resource Facing"
+								},
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"value": "Customer Facing",
+									"valueType": "CodeTable",
+									"isDefault": false,
+									"displayValue": "Customer Facing"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "CW_RELATIONTYPE",
+					"versions": [
+						{
+							"id": "CW_RELATIONTYPE",
+							"validFor": {
+								"startDateTime": "2020-04-08T00:00:00.000Z"
+							},
+							"valueType": "String",
+							"characteristicValues": [
+								{
+									"validFor": {
+										"startDateTime": "2020-04-08T00:00:00.000Z"
+									},
+									"valueType": "String"
+								}
+							],
+							"propertiesPermissions": [
+								{
+									"id": "perm_mandatory",
+									"type": "mandatory",
+									"isSelected": false
+								},
+								{
+									"id": "perm_hidden",
+									"type": "hidden",
+									"isSelected": false
+								},
+								{
+									"id": "perm_readonly",
+									"type": "readonly",
+									"isSelected": false
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"actions": [
+		{
+			"id": "omActivateOptionalProduct_Act",
+			"name": "omActivateOptionalProduct_Act",
+			"orderItemAction": "ADD",
+			"subAction": "Basket.Submit",
+			"implementationType": "FCS",
+			"implementationValue": "FPS_omActivateOptionalProduct"
+		},
+		{
+			"id": "omDeactivateOptionalProduct_Dis",
+			"name": "omDeactivateOptionalProduct_Dis",
+			"orderItemAction": "DISCONNECT",
+			"subAction": "Basket.Submit",
+			"implementationType": "FCS",
+			"implementationValue": "FPS_omDeactivateOptionalProduct"
+		},
+		{
+			"id": "omDeactivateToInactiveOptPO_Dea",
+			"name": "omDeactivateToInactiveOptPO_Dea",
+			"orderItemAction": "DEACTIVATE",
+			"subAction": "Basket.Submit",
+			"implementationType": "FCS",
+			"implementationValue": "FPS_omDeactivateToInactiveOptPO"
+		},
+		{
+			"id": "omModifyCBIOProduct_Optional_PS",
+			"name": "omModifyCBIOProduct_Optional_PS",
+			"orderItemAction": "CHANGE",
+			"subAction": "Basket.Submit",
+			"implementationType": "FCS",
+			"implementationValue": "FPS_omModifyCBIOProduct"
+		},
+		{
+			"id": "omReactivateOptionalProduct_Rea",
+			"name": "omReactivateOptionalProduct_Rea",
+			"orderItemAction": "REACTIVATE",
+			"subAction": "Basket.Submit",
+			"implementationType": "FCS",
+			"implementationValue": "FPS_omReactivateOptionalProduct"
+		},
+		{
+			"id": "omSwapInOptionalProduct_Sin",
+			"name": "omSwapInOptionalProduct_Sin",
+			"orderItemAction": "SWAP-IN",
+			"subAction": "Basket.Submit",
+			"implementationType": "FCS",
+			"implementationValue": "FPS_omSwapInOptionalProduct"
+		},
+		{
+			"id": "omSwapOutOptionalProduct_Sout",
+			"name": "omSwapOutOptionalProduct_Sout",
+			"orderItemAction": "SWAP-OUT",
+			"subAction": "Basket.Submit",
+			"implementationType": "FCS",
+			"implementationValue": "FPS_omSwapOutOptionalProduct"
+		}
+	]
+}

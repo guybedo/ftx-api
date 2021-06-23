@@ -1,0 +1,139 @@
+{
+	"id": "NOA_Hiérarchie",
+	"href": "/eoc/ecmRT/v2/productCategory/NOA_Hiérarchie?requestDate=2020-08-27T00:00:00Z",
+	"name": "NOA_Hiérarchie",
+	"description": "NOA_Hiérarchie",
+	"validFor": {
+		"startDateTime": "2018-06-01T10:00:00.000Z"
+	},
+	"productCategoryList": [
+		{
+			"id": "Équipement",
+			"parentCategoryId": "NOA_Hiérarchie",
+			"href": "/eoc/ecmRT/v2/productCategory/Équipement?requestDate=2020-08-27T00:00:00Z",
+			"name": "Équipement",
+			"description": "Équipement",
+			"validFor": {
+				"startDateTime": "2018-06-01T10:00:00.000Z"
+			},
+			"productCategoryList": [
+				{
+					"id": "Terminaux",
+					"parentCategoryId": "Équipement",
+					"href": "/eoc/ecmRT/v2/productCategory/Terminaux?requestDate=2020-08-27T00:00:00Z",
+					"name": "Terminaux",
+					"description": "Terminaux",
+					"validFor": {
+						"startDateTime": "2018-06-01T10:00:00.000Z"
+					},
+					"productCategoryList": [
+						{
+							"id": "Alcatel",
+							"parentCategoryId": "Terminaux",
+							"href": "/eoc/ecmRT/v2/productCategory/Alcatel?requestDate=2020-08-27T00:00:00Z",
+							"name": "Alcatel",
+							"description": "Alcatel",
+							"validFor": {
+								"startDateTime": "2018-06-01T10:00:00.000Z"
+							}
+						}
+					]
+				},
+				{
+					"id": "ArticlesTV",
+					"parentCategoryId": "Équipement",
+					"href": "/eoc/ecmRT/v2/productCategory/ArticlesTV?requestDate=2020-08-27T00:00:00Z",
+					"name": "Articles TV",
+					"description": "Articles TV",
+					"validFor": {
+						"startDateTime": "2018-06-01T10:00:00.000Z"
+					},
+					"productCategoryList": [
+						{
+							"id": "DecodeurTVSAT",
+							"parentCategoryId": "ArticlesTV",
+							"href": "/eoc/ecmRT/v2/productCategory/DecodeurTVSAT?requestDate=2020-08-27T00:00:00Z",
+							"name": "Décodeur TV SAT",
+							"description": "Décodeur TV SAT",
+							"validFor": {
+								"startDateTime": "2018-06-01T10:00:00.000Z"
+							}
+						}
+					]
+				},
+				{
+					"id": "ArticlesIF",
+					"parentCategoryId": "Équipement",
+					"href": "/eoc/ecmRT/v2/productCategory/ArticlesIF?requestDate=2020-08-27T00:00:00Z",
+					"name": "Articles IF",
+					"description": "Articles IF",
+					"validFor": {
+						"startDateTime": "2018-06-01T10:00:00.000Z"
+					},
+					"productCategoryList": [
+						{
+							"id": "Routeur",
+							"parentCategoryId": "ArticlesIF",
+							"href": "/eoc/ecmRT/v2/productCategory/Routeur?requestDate=2020-08-27T00:00:00Z",
+							"name": "Routeur",
+							"description": "Routeur",
+							"validFor": {
+								"startDateTime": "2018-06-01T10:00:00.000Z"
+							}
+						},
+						{
+							"id": "DecodeurTVIP",
+							"parentCategoryId": "ArticlesIF",
+							"href": "/eoc/ecmRT/v2/productCategory/DecodeurTVIP?requestDate=2020-08-27T00:00:00Z",
+							"name": "Décodeur TV IP",
+							"description": "Décodeur TV IP",
+							"validFor": {
+								"startDateTime": "2018-06-01T10:00:00.000Z"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "TVSAT",
+			"parentCategoryId": "NOA_Hiérarchie",
+			"href": "/eoc/ecmRT/v2/productCategory/TVSAT?requestDate=2020-08-27T00:00:00Z",
+			"name": "TV SAT",
+			"description": "TV SAT",
+			"validFor": {
+				"startDateTime": "2018-06-01T10:00:00.000Z"
+			}
+		},
+		{
+			"id": "Fixe",
+			"parentCategoryId": "NOA_Hiérarchie",
+			"href": "/eoc/ecmRT/v2/productCategory/Fixe?requestDate=2020-08-27T00:00:00Z",
+			"name": "Fixe",
+			"description": "Fixe",
+			"validFor": {
+				"startDateTime": "2018-06-01T10:00:00.000Z"
+			}
+		},
+		{
+			"id": "Mobile",
+			"parentCategoryId": "NOA_Hiérarchie",
+			"href": "/eoc/ecmRT/v2/productCategory/Mobile?requestDate=2020-08-27T00:00:00Z",
+			"name": "Mobile",
+			"description": "Mobile",
+			"validFor": {
+				"startDateTime": "2018-06-01T10:00:00.000Z"
+			}
+		},
+		{
+			"id": "Internet",
+			"parentCategoryId": "NOA_Hiérarchie",
+			"href": "/eoc/ecmRT/v2/productCategory/Internet?requestDate=2020-08-27T00:00:00Z",
+			"name": "Internet",
+			"description": "Internet",
+			"validFor": {
+				"startDateTime": "2018-06-01T10:00:00.000Z"
+			}
+		}
+	]
+}
