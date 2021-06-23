@@ -2,3 +2,5 @@
 .project
 .settings
 target
+src/main/java/com/akalea/ftx/configuration/_private/
+

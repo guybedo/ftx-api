@@ -1,4 +1,4 @@
-package com.akalea.ftx;
+package com.akalea.ftx.configuration;
 
 import java.io.BufferedReader;
 import java.io.IOException;

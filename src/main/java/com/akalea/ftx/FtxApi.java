@@ -11,18 +11,17 @@ import com.akalea.ftx.domain.FtxMarket;
 import com.akalea.ftx.domain.FtxOrder;
 import com.akalea.ftx.domain.FtxSubAccount;
 import com.akalea.ftx.domain.FtxSubAccountBalance;
-import com.akalea.ftx.impl.FtxAccountsImpl;
 import com.akalea.ftx.impl.FtxMarketsImpl;
 import com.akalea.ftx.impl.FtxOrdersImpl;
 
 @Service
 public class FtxApi {
     @Autowired
-    private FtxAccountsImpl accounts;
+    private Accounts accounts;
     @Autowired
-    private FtxMarketsImpl  markets;
+    private FtxMarketsImpl markets;
     @Autowired
-    private FtxOrdersImpl   orders;
+    private FtxOrdersImpl orders;
 
     public AuthenticatedFtxApi withAuth(FtxCredentials auth) {
         return new AuthenticatedFtxApi().setAuth(auth);
@@ -45,7 +44,15 @@ public class FtxApi {
 
         List<FtxSubAccount> getSubAccounts(FtxCredentials auth);
 
-        List<FtxSubAccountBalance> getSubAccountBalances(String nickname, FtxCredentials auth);
+        List<FtxSubAccountBalance> getSubAccountBalances(String nickname,
+                FtxCredentials auth);
+
+        Double getFreeCollateral(String coin, FtxCredentials auth);
+
+        Double getMainAccountFreeCollateral(String coin, FtxCredentials auth);
+
+        Double getSubAccountFreeCollateral(String nickname, String coin,
+                FtxCredentials auth);
     }
 
     public static interface AccountsAuth {
@@ -54,6 +61,12 @@ public class FtxApi {
         List<FtxSubAccount> getSubAccounts();
 
         List<FtxSubAccountBalance> getSubAccountBalances(String nickname);
+
+        Double getFreeCollateral(String coin);
+
+        Double getMainAccountFreeCollateral(String coin);
+
+        Double getSubAccountFreeCollateral(String nickname, String coin);
     }
 
     public static interface Orders {
@@ -74,7 +87,7 @@ public class FtxApi {
 
     public static class AuthenticatedFtxApi {
         private FtxApi api;
-        private FtxCredentials   auth;
+        private FtxCredentials auth;
 
         public AccountsAuth accounts() {
             return new AccountsAuth() {
@@ -90,8 +103,27 @@ public class FtxApi {
                 }
 
                 @Override
-                public List<FtxSubAccountBalance> getSubAccountBalances(String nickname) {
+                public List<FtxSubAccountBalance> getSubAccountBalances(
+                        String nickname) {
                     return api.accounts.getSubAccountBalances(nickname, auth);
+                }
+
+                @Override
+                public Double getFreeCollateral(String coin) {
+                    return api.accounts.getFreeCollateral(coin, auth);
+                }
+
+                @Override
+                public Double getMainAccountFreeCollateral(String coin) {
+                    return api.accounts
+                            .getMainAccountFreeCollateral(coin, auth);
+                }
+
+                @Override
+                public Double getSubAccountFreeCollateral(String nickname,
+                        String coin) {
+                    return api.accounts
+                            .getSubAccountFreeCollateral(nickname, coin, auth);
                 }
 
             };

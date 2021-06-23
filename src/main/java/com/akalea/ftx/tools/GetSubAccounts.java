@@ -1,13 +1,14 @@
 package com.akalea.ftx.tools;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.akalea.ftx.FtxApi;
-import com.akalea.ftx.FtxApiConfiguration;
+import com.akalea.ftx.configuration.FtxApiConfiguration;
 import com.akalea.ftx.domain.FtxAccount;
 import com.akalea.ftx.domain.FtxCredentials;
 import com.akalea.ftx.domain.FtxSubAccount;
@@ -16,8 +17,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class GetSubAccounts {
 
-    private final static Logger logger =
-        LoggerFactory.getLogger(GetSubAccounts.class);
+    private final static Logger logger = LoggerFactory
+            .getLogger(GetSubAccounts.class);
 
     public static void main(String[] args) throws JsonProcessingException {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
@@ -25,13 +26,16 @@ public class GetSubAccounts {
         context.refresh();
         FtxApi api = context.getBean(FtxApi.class);
 
-        List<FtxSubAccount> accounts =
-            api
+        FtxCredentials credentials = Optional
+                .ofNullable(context.getBean(FtxCredentials.class))
+                .orElse(
+                        new FtxCredentials()
+                                .setApiKey("api-key")
+                                .setApiSecret("api-secret"));
+
+        List<FtxSubAccount> accounts = api
                 .accounts()
-                .getSubAccounts(
-                    new FtxCredentials()
-                        .setApiKey("api-key")
-                        .setApiSecret("api-secret"));
+                .getSubAccounts(credentials);
         System.out.println(new ObjectMapper().writeValueAsString(accounts));
 
     }
