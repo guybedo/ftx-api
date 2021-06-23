@@ -1,6 +1,6 @@
 package com.akalea.ftx.domain;
 
-public class Auth {
+public class FtxCredentials {
 
     private String apiKey;
     private String apiSecret;
@@ -10,7 +10,7 @@ public class Auth {
         return apiKey;
     }
 
-    public Auth setApiKey(String apiKey) {
+    public FtxCredentials setApiKey(String apiKey) {
         this.apiKey = apiKey;
         return this;
     }
@@ -19,7 +19,7 @@ public class Auth {
         return apiSecret;
     }
 
-    public Auth setApiSecret(String apiSecret) {
+    public FtxCredentials setApiSecret(String apiSecret) {
         this.apiSecret = apiSecret;
         return this;
     }
@@ -28,7 +28,7 @@ public class Auth {
         return subaccount;
     }
 
-    public Auth setSubaccount(String subaccount) {
+    public FtxCredentials setSubaccount(String subaccount) {
         this.subaccount = subaccount;
         return this;
     }

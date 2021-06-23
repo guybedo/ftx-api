@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.google.common.collect.Lists;
 
-public class Account {
+public class FtxAccount {
 
     private boolean backstopProvider;
     private Double  collateral;
@@ -21,13 +21,13 @@ public class Account {
     private Double  totalPositionSize;
     private String  username;
 
-    private List<Position> positions = Lists.newArrayList();
+    private List<FtxPosition> positions = Lists.newArrayList();
 
     public boolean isBackstopProvider() {
         return backstopProvider;
     }
 
-    public Account setBackstopProvider(boolean backstopProvider) {
+    public FtxAccount setBackstopProvider(boolean backstopProvider) {
         this.backstopProvider = backstopProvider;
         return this;
     }
@@ -36,7 +36,7 @@ public class Account {
         return collateral;
     }
 
-    public Account setCollateral(Double collateral) {
+    public FtxAccount setCollateral(Double collateral) {
         this.collateral = collateral;
         return this;
     }
@@ -45,7 +45,7 @@ public class Account {
         return freeCollateral;
     }
 
-    public Account setFreeCollateral(Double freeCollateral) {
+    public FtxAccount setFreeCollateral(Double freeCollateral) {
         this.freeCollateral = freeCollateral;
         return this;
     }
@@ -54,7 +54,7 @@ public class Account {
         return initialMarginRequirement;
     }
 
-    public Account setInitialMarginRequirement(Double initialMarginRequirement) {
+    public FtxAccount setInitialMarginRequirement(Double initialMarginRequirement) {
         this.initialMarginRequirement = initialMarginRequirement;
         return this;
     }
@@ -63,7 +63,7 @@ public class Account {
         return leverage;
     }
 
-    public Account setLeverage(Integer leverage) {
+    public FtxAccount setLeverage(Integer leverage) {
         this.leverage = leverage;
         return this;
     }
@@ -72,7 +72,7 @@ public class Account {
         return liquidating;
     }
 
-    public Account setLiquidating(boolean liquidating) {
+    public FtxAccount setLiquidating(boolean liquidating) {
         this.liquidating = liquidating;
         return this;
     }
@@ -81,7 +81,7 @@ public class Account {
         return maintenanceMarginRequirement;
     }
 
-    public Account setMaintenanceMarginRequirement(Double maintenanceMarginRequirement) {
+    public FtxAccount setMaintenanceMarginRequirement(Double maintenanceMarginRequirement) {
         this.maintenanceMarginRequirement = maintenanceMarginRequirement;
         return this;
     }
@@ -90,7 +90,7 @@ public class Account {
         return makerFee;
     }
 
-    public Account setMakerFee(Double makerFee) {
+    public FtxAccount setMakerFee(Double makerFee) {
         this.makerFee = makerFee;
         return this;
     }
@@ -99,7 +99,7 @@ public class Account {
         return marginFraction;
     }
 
-    public Account setMarginFraction(Double marginFraction) {
+    public FtxAccount setMarginFraction(Double marginFraction) {
         this.marginFraction = marginFraction;
         return this;
     }
@@ -108,7 +108,7 @@ public class Account {
         return openMarginFraction;
     }
 
-    public Account setOpenMarginFraction(Double openMarginFraction) {
+    public FtxAccount setOpenMarginFraction(Double openMarginFraction) {
         this.openMarginFraction = openMarginFraction;
         return this;
     }
@@ -117,7 +117,7 @@ public class Account {
         return takerFee;
     }
 
-    public Account setTakerFee(Double takerFee) {
+    public FtxAccount setTakerFee(Double takerFee) {
         this.takerFee = takerFee;
         return this;
     }
@@ -126,7 +126,7 @@ public class Account {
         return totalAccountValue;
     }
 
-    public Account setTotalAccountValue(Double totalAccountValue) {
+    public FtxAccount setTotalAccountValue(Double totalAccountValue) {
         this.totalAccountValue = totalAccountValue;
         return this;
     }
@@ -135,7 +135,7 @@ public class Account {
         return totalPositionSize;
     }
 
-    public Account setTotalPositionSize(Double totalPositionSize) {
+    public FtxAccount setTotalPositionSize(Double totalPositionSize) {
         this.totalPositionSize = totalPositionSize;
         return this;
     }
@@ -144,16 +144,16 @@ public class Account {
         return username;
     }
 
-    public Account setUsername(String username) {
+    public FtxAccount setUsername(String username) {
         this.username = username;
         return this;
     }
 
-    public List<Position> getPositions() {
+    public List<FtxPosition> getPositions() {
         return positions;
     }
 
-    public Account setPositions(List<Position> positions) {
+    public FtxAccount setPositions(List<FtxPosition> positions) {
         this.positions = positions;
         return this;
     }

@@ -1,5 +1,5 @@
 package com.akalea.ftx.domain;
 
-public enum PositionSide {
+public enum FtxPositionSide {
         buy, sell
 }

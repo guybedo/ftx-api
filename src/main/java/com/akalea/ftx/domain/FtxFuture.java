@@ -1,5 +1,5 @@
 package com.akalea.ftx.domain;
 
-public class Future {
+public class FtxFuture {
 
 }

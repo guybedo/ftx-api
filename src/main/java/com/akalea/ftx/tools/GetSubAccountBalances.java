@@ -8,10 +8,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.akalea.ftx.FtxApi;
 import com.akalea.ftx.FtxApiConfiguration;
-import com.akalea.ftx.domain.Account;
-import com.akalea.ftx.domain.Auth;
-import com.akalea.ftx.domain.SubAccount;
-import com.akalea.ftx.domain.SubAccountBalance;
+import com.akalea.ftx.domain.FtxAccount;
+import com.akalea.ftx.domain.FtxCredentials;
+import com.akalea.ftx.domain.FtxSubAccount;
+import com.akalea.ftx.domain.FtxSubAccountBalance;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -26,12 +26,12 @@ public class GetSubAccountBalances {
         context.refresh();
         FtxApi api = context.getBean(FtxApi.class);
 
-        List<SubAccountBalance> accounts =
+        List<FtxSubAccountBalance> accounts =
             api
                 .accounts()
                 .getSubAccountBalances(
                     "strategy",
-                    new Auth()
+                    new FtxCredentials()
                         .setApiKey("api-key")
                         .setApiSecret("api-secret"));
         System.out.println(new ObjectMapper().writeValueAsString(accounts));

@@ -5,13 +5,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.akalea.ftx.FtxApi.Orders;
-import com.akalea.ftx.domain.Auth;
-import com.akalea.ftx.domain.Order;
+import com.akalea.ftx.domain.FtxCredentials;
+import com.akalea.ftx.domain.FtxOrder;
 
 @Service
 public class FtxOrdersImpl extends FtxApiBase implements Orders {
 
-    public Order placeOrder(Order order, Auth auth) {
+    public FtxOrder placeOrder(FtxOrder order, FtxCredentials auth) {
         String url = url("api/orders");
 
         ResponseEntity<FtxOrderResponse> resp =
@@ -25,7 +25,7 @@ public class FtxOrdersImpl extends FtxApiBase implements Orders {
             .getResult();
     }
 
-    private static class FtxOrderResponse extends FtxResponse<Order> {
+    private static class FtxOrderResponse extends FtxResponse<FtxOrder> {
 
     }
 }

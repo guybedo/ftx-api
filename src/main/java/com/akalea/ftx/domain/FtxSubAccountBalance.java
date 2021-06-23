@@ -1,6 +1,6 @@
 package com.akalea.ftx.domain;
 
-public class SubAccountBalance {
+public class FtxSubAccountBalance {
     private String coin;
     private Double free;
     private Double total;
@@ -11,7 +11,7 @@ public class SubAccountBalance {
         return coin;
     }
 
-    public SubAccountBalance setCoin(String coin) {
+    public FtxSubAccountBalance setCoin(String coin) {
         this.coin = coin;
         return this;
     }
@@ -20,7 +20,7 @@ public class SubAccountBalance {
         return free;
     }
 
-    public SubAccountBalance setFree(Double free) {
+    public FtxSubAccountBalance setFree(Double free) {
         this.free = free;
         return this;
     }
@@ -29,7 +29,7 @@ public class SubAccountBalance {
         return total;
     }
 
-    public SubAccountBalance setTotal(Double total) {
+    public FtxSubAccountBalance setTotal(Double total) {
         this.total = total;
         return this;
     }
@@ -38,7 +38,7 @@ public class SubAccountBalance {
         return spotBorrow;
     }
 
-    public SubAccountBalance setSpotBorrow(Double spotBorrow) {
+    public FtxSubAccountBalance setSpotBorrow(Double spotBorrow) {
         this.spotBorrow = spotBorrow;
         return this;
     }
@@ -47,7 +47,7 @@ public class SubAccountBalance {
         return availableWithoutBorrow;
     }
 
-    public SubAccountBalance setAvailableWithoutBorrow(Double availableWithoutBorrow) {
+    public FtxSubAccountBalance setAvailableWithoutBorrow(Double availableWithoutBorrow) {
         this.availableWithoutBorrow = availableWithoutBorrow;
         return this;
     }

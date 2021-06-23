@@ -6,8 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.akalea.ftx.FtxApi;
 import com.akalea.ftx.FtxApiConfiguration;
-import com.akalea.ftx.domain.Account;
-import com.akalea.ftx.domain.Auth;
+import com.akalea.ftx.domain.FtxAccount;
+import com.akalea.ftx.domain.FtxCredentials;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -22,11 +22,11 @@ public class GetAccount {
         context.refresh();
         FtxApi api = context.getBean(FtxApi.class);
 
-        Account account =
+        FtxAccount account =
             api
                 .accounts()
                 .getAccount(
-                    new Auth()
+                    new FtxCredentials()
                         .setApiKey("api-key")
                         .setApiSecret("api-secret"));
         System.out.println(new ObjectMapper().writeValueAsString(account));

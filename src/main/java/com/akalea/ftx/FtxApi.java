@@ -5,12 +5,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.akalea.ftx.domain.Account;
-import com.akalea.ftx.domain.Auth;
-import com.akalea.ftx.domain.Market;
-import com.akalea.ftx.domain.Order;
-import com.akalea.ftx.domain.SubAccount;
-import com.akalea.ftx.domain.SubAccountBalance;
+import com.akalea.ftx.domain.FtxAccount;
+import com.akalea.ftx.domain.FtxCredentials;
+import com.akalea.ftx.domain.FtxMarket;
+import com.akalea.ftx.domain.FtxOrder;
+import com.akalea.ftx.domain.FtxSubAccount;
+import com.akalea.ftx.domain.FtxSubAccountBalance;
 import com.akalea.ftx.impl.FtxAccountsImpl;
 import com.akalea.ftx.impl.FtxMarketsImpl;
 import com.akalea.ftx.impl.FtxOrdersImpl;
@@ -24,7 +24,7 @@ public class FtxApi {
     @Autowired
     private FtxOrdersImpl   orders;
 
-    public AuthenticatedFtxApi withAuth(Auth auth) {
+    public AuthenticatedFtxApi withAuth(FtxCredentials auth) {
         return new AuthenticatedFtxApi().setAuth(auth);
     }
 
@@ -41,56 +41,56 @@ public class FtxApi {
     }
 
     public static interface Accounts {
-        Account getAccount(Auth auth);
+        FtxAccount getAccount(FtxCredentials auth);
 
-        List<SubAccount> getSubAccounts(Auth auth);
+        List<FtxSubAccount> getSubAccounts(FtxCredentials auth);
 
-        List<SubAccountBalance> getSubAccountBalances(String nickname, Auth auth);
+        List<FtxSubAccountBalance> getSubAccountBalances(String nickname, FtxCredentials auth);
     }
 
     public static interface AccountsAuth {
-        Account getAccount();
+        FtxAccount getAccount();
 
-        List<SubAccount> getSubAccounts();
+        List<FtxSubAccount> getSubAccounts();
 
-        List<SubAccountBalance> getSubAccountBalances(String nickname);
+        List<FtxSubAccountBalance> getSubAccountBalances(String nickname);
     }
 
     public static interface Orders {
-        Order placeOrder(Order order, Auth auth);
+        FtxOrder placeOrder(FtxOrder order, FtxCredentials auth);
     }
 
     public static interface OrdersAuth {
-        Order placeOrder(Order order);
+        FtxOrder placeOrder(FtxOrder order);
     }
 
     public static interface Markets {
-        List<Market> getMarkets(Auth auth);
+        List<FtxMarket> getMarkets(FtxCredentials auth);
     }
 
     public static interface MarketsAuth {
-        List<Market> getMarkets();
+        List<FtxMarket> getMarkets();
     }
 
     public static class AuthenticatedFtxApi {
         private FtxApi api;
-        private Auth   auth;
+        private FtxCredentials   auth;
 
         public AccountsAuth accounts() {
             return new AccountsAuth() {
 
                 @Override
-                public Account getAccount() {
+                public FtxAccount getAccount() {
                     return api.accounts.getAccount(auth);
                 }
 
                 @Override
-                public List<SubAccount> getSubAccounts() {
+                public List<FtxSubAccount> getSubAccounts() {
                     return api.accounts.getSubAccounts(auth);
                 }
 
                 @Override
-                public List<SubAccountBalance> getSubAccountBalances(String nickname) {
+                public List<FtxSubAccountBalance> getSubAccountBalances(String nickname) {
                     return api.accounts.getSubAccountBalances(nickname, auth);
                 }
 
@@ -101,7 +101,7 @@ public class FtxApi {
             return new MarketsAuth() {
 
                 @Override
-                public List<Market> getMarkets() {
+                public List<FtxMarket> getMarkets() {
                     return api.markets.getMarkets(auth);
                 }
 
@@ -112,7 +112,7 @@ public class FtxApi {
             return new OrdersAuth() {
 
                 @Override
-                public Order placeOrder(Order order) {
+                public FtxOrder placeOrder(FtxOrder order) {
                     return api.orders.placeOrder(order, auth);
                 }
 
@@ -128,11 +128,11 @@ public class FtxApi {
             return this;
         }
 
-        public Auth getAuth() {
+        public FtxCredentials getAuth() {
             return auth;
         }
 
-        public AuthenticatedFtxApi setAuth(Auth auth) {
+        public AuthenticatedFtxApi setAuth(FtxCredentials auth) {
             this.auth = auth;
             return this;
         }

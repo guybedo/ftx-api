@@ -1,6 +1,6 @@
 package com.akalea.ftx.domain;
 
-public class Market {
+public class FtxMarket {
     public static enum MarketType {
             futures, spot
     }
@@ -21,7 +21,7 @@ public class Market {
         return name;
     }
 
-    public Market setName(String name) {
+    public FtxMarket setName(String name) {
         this.name = name;
         return this;
     }
@@ -30,7 +30,7 @@ public class Market {
         return baseCurrency;
     }
 
-    public Market setBaseCurrency(String baseCurrency) {
+    public FtxMarket setBaseCurrency(String baseCurrency) {
         this.baseCurrency = baseCurrency;
         return this;
     }
@@ -39,7 +39,7 @@ public class Market {
         return quoteCurrency;
     }
 
-    public Market setQuoteCurrency(String quoteCurrency) {
+    public FtxMarket setQuoteCurrency(String quoteCurrency) {
         this.quoteCurrency = quoteCurrency;
         return this;
     }
@@ -48,7 +48,7 @@ public class Market {
         return enabled;
     }
 
-    public Market setEnabled(boolean enabled) {
+    public FtxMarket setEnabled(boolean enabled) {
         this.enabled = enabled;
         return this;
     }
@@ -57,7 +57,7 @@ public class Market {
         return ask;
     }
 
-    public Market setAsk(double ask) {
+    public FtxMarket setAsk(double ask) {
         this.ask = ask;
         return this;
     }
@@ -66,7 +66,7 @@ public class Market {
         return bid;
     }
 
-    public Market setBid(double bid) {
+    public FtxMarket setBid(double bid) {
         this.bid = bid;
         return this;
     }
@@ -75,7 +75,7 @@ public class Market {
         return last;
     }
 
-    public Market setLast(double last) {
+    public FtxMarket setLast(double last) {
         this.last = last;
         return this;
     }
@@ -84,7 +84,7 @@ public class Market {
         return postOnly;
     }
 
-    public Market setPostOnly(boolean postOnly) {
+    public FtxMarket setPostOnly(boolean postOnly) {
         this.postOnly = postOnly;
         return this;
     }
@@ -93,7 +93,7 @@ public class Market {
         return priceIncrement;
     }
 
-    public Market setPriceIncrement(double priceIncrement) {
+    public FtxMarket setPriceIncrement(double priceIncrement) {
         this.priceIncrement = priceIncrement;
         return this;
     }
@@ -102,7 +102,7 @@ public class Market {
         return sizeIncrement;
     }
 
-    public Market setSizeIncrement(double sizeIncrement) {
+    public FtxMarket setSizeIncrement(double sizeIncrement) {
         this.sizeIncrement = sizeIncrement;
         return this;
     }
@@ -111,7 +111,7 @@ public class Market {
         return restricted;
     }
 
-    public Market setRestricted(boolean restricted) {
+    public FtxMarket setRestricted(boolean restricted) {
         this.restricted = restricted;
         return this;
     }

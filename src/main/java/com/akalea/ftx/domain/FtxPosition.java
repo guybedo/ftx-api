@@ -1,6 +1,6 @@
 package com.akalea.ftx.domain;
 
-public class Position {
+public class FtxPosition {
 
     private Double       cost;
     private Double       entryPrice;
@@ -12,7 +12,7 @@ public class Position {
     private Double       openSize;
     private Double       realizedPnl;
     private Double       shortOrderSize;
-    private PositionSide side;
+    private FtxPositionSide side;
     private Double       size;
     private Double       unrealizedPnl;
 
@@ -20,7 +20,7 @@ public class Position {
         return cost;
     }
 
-    public Position setCost(Double cost) {
+    public FtxPosition setCost(Double cost) {
         this.cost = cost;
         return this;
     }
@@ -29,7 +29,7 @@ public class Position {
         return entryPrice;
     }
 
-    public Position setEntryPrice(Double entryPrice) {
+    public FtxPosition setEntryPrice(Double entryPrice) {
         this.entryPrice = entryPrice;
         return this;
     }
@@ -38,7 +38,7 @@ public class Position {
         return future;
     }
 
-    public Position setFuture(String future) {
+    public FtxPosition setFuture(String future) {
         this.future = future;
         return this;
     }
@@ -47,7 +47,7 @@ public class Position {
         return initialMarginRequirement;
     }
 
-    public Position setInitialMarginRequirement(Double initialMarginRequirement) {
+    public FtxPosition setInitialMarginRequirement(Double initialMarginRequirement) {
         this.initialMarginRequirement = initialMarginRequirement;
         return this;
     }
@@ -56,7 +56,7 @@ public class Position {
         return longOrderSize;
     }
 
-    public Position setLongOrderSize(Double longOrderSize) {
+    public FtxPosition setLongOrderSize(Double longOrderSize) {
         this.longOrderSize = longOrderSize;
         return this;
     }
@@ -65,7 +65,7 @@ public class Position {
         return maintenanceMarginRequirement;
     }
 
-    public Position setMaintenanceMarginRequirement(Double maintenanceMarginRequirement) {
+    public FtxPosition setMaintenanceMarginRequirement(Double maintenanceMarginRequirement) {
         this.maintenanceMarginRequirement = maintenanceMarginRequirement;
         return this;
     }
@@ -74,7 +74,7 @@ public class Position {
         return netSize;
     }
 
-    public Position setNetSize(Double netSize) {
+    public FtxPosition setNetSize(Double netSize) {
         this.netSize = netSize;
         return this;
     }
@@ -83,7 +83,7 @@ public class Position {
         return openSize;
     }
 
-    public Position setOpenSize(Double openSize) {
+    public FtxPosition setOpenSize(Double openSize) {
         this.openSize = openSize;
         return this;
     }
@@ -92,7 +92,7 @@ public class Position {
         return realizedPnl;
     }
 
-    public Position setRealizedPnl(Double realizedPnl) {
+    public FtxPosition setRealizedPnl(Double realizedPnl) {
         this.realizedPnl = realizedPnl;
         return this;
     }
@@ -101,16 +101,16 @@ public class Position {
         return shortOrderSize;
     }
 
-    public Position setShortOrderSize(Double shortOrderSize) {
+    public FtxPosition setShortOrderSize(Double shortOrderSize) {
         this.shortOrderSize = shortOrderSize;
         return this;
     }
 
-    public PositionSide getSide() {
+    public FtxPositionSide getSide() {
         return side;
     }
 
-    public Position setSide(PositionSide side) {
+    public FtxPosition setSide(FtxPositionSide side) {
         this.side = side;
         return this;
     }
@@ -119,7 +119,7 @@ public class Position {
         return size;
     }
 
-    public Position setSize(Double size) {
+    public FtxPosition setSize(Double size) {
         this.size = size;
         return this;
     }
@@ -128,7 +128,7 @@ public class Position {
         return unrealizedPnl;
     }
 
-    public Position setUnrealizedPnl(Double unrealizedPnl) {
+    public FtxPosition setUnrealizedPnl(Double unrealizedPnl) {
         this.unrealizedPnl = unrealizedPnl;
         return this;
     }

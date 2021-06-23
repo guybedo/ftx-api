@@ -8,13 +8,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.akalea.ftx.FtxApi.Markets;
-import com.akalea.ftx.domain.Auth;
-import com.akalea.ftx.domain.Market;
+import com.akalea.ftx.domain.FtxCredentials;
+import com.akalea.ftx.domain.FtxMarket;
 
 @Service
 public class FtxMarketsImpl extends FtxApiBase implements Markets {
 
-    public List<Market> getMarkets(Auth auth) {
+    public List<FtxMarket> getMarkets(FtxCredentials auth) {
         String url = url("api/markets");
         ResponseEntity<FtxMarketResponse> resp =
             restTemplate.exchange(
@@ -28,7 +28,7 @@ public class FtxMarketsImpl extends FtxApiBase implements Markets {
             .getResult();
     }
 
-    private static class FtxMarketResponse extends FtxResponse<List<Market>> {
+    private static class FtxMarketResponse extends FtxResponse<List<FtxMarket>> {
 
     }
 

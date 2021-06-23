@@ -1,6 +1,6 @@
 package com.akalea.ftx.domain;
 
-public class SubAccount {
+public class FtxSubAccount {
     private String  nickname;
     private boolean deletable;
     private boolean editable;
@@ -10,7 +10,7 @@ public class SubAccount {
         return nickname;
     }
 
-    public SubAccount setNickname(String nickname) {
+    public FtxSubAccount setNickname(String nickname) {
         this.nickname = nickname;
         return this;
     }
@@ -19,7 +19,7 @@ public class SubAccount {
         return deletable;
     }
 
-    public SubAccount setDeletable(boolean deletable) {
+    public FtxSubAccount setDeletable(boolean deletable) {
         this.deletable = deletable;
         return this;
     }
@@ -28,7 +28,7 @@ public class SubAccount {
         return editable;
     }
 
-    public SubAccount setEditable(boolean editable) {
+    public FtxSubAccount setEditable(boolean editable) {
         this.editable = editable;
         return this;
     }
@@ -37,7 +37,7 @@ public class SubAccount {
         return competition;
     }
 
-    public SubAccount setCompetition(boolean competition) {
+    public FtxSubAccount setCompetition(boolean competition) {
         this.competition = competition;
         return this;
     }

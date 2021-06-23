@@ -2,7 +2,7 @@ package com.akalea.ftx.domain;
 
 import java.time.LocalDateTime;
 
-public class Order {
+public class FtxOrder {
 
     public static enum OrderType {
             limit, market, stop, trailingStop, takeProfit
@@ -16,7 +16,7 @@ public class Order {
     private Double        price;
     private Double        avgFillPrice;
     private Integer       remainingSize;
-    private PositionSide  side;
+    private FtxPositionSide  side;
     private Integer       size;
     private String        status;
     private OrderType     type;
@@ -32,7 +32,7 @@ public class Order {
         return id;
     }
 
-    public Order setId(Integer id) {
+    public FtxOrder setId(Integer id) {
         this.id = id;
         return this;
     }
@@ -41,7 +41,7 @@ public class Order {
         return createdAt;
     }
 
-    public Order setCreatedAt(LocalDateTime createdAt) {
+    public FtxOrder setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
     }
@@ -50,7 +50,7 @@ public class Order {
         return filledSize;
     }
 
-    public Order setFilledSize(Integer filledSize) {
+    public FtxOrder setFilledSize(Integer filledSize) {
         this.filledSize = filledSize;
         return this;
     }
@@ -59,7 +59,7 @@ public class Order {
         return future;
     }
 
-    public Order setFuture(String future) {
+    public FtxOrder setFuture(String future) {
         this.future = future;
         return this;
     }
@@ -68,7 +68,7 @@ public class Order {
         return market;
     }
 
-    public Order setMarket(String market) {
+    public FtxOrder setMarket(String market) {
         this.market = market;
         return this;
     }
@@ -77,7 +77,7 @@ public class Order {
         return price;
     }
 
-    public Order setPrice(Double price) {
+    public FtxOrder setPrice(Double price) {
         this.price = price;
         return this;
     }
@@ -86,7 +86,7 @@ public class Order {
         return avgFillPrice;
     }
 
-    public Order setAvgFillPrice(Double avgFillPrice) {
+    public FtxOrder setAvgFillPrice(Double avgFillPrice) {
         this.avgFillPrice = avgFillPrice;
         return this;
     }
@@ -95,16 +95,16 @@ public class Order {
         return remainingSize;
     }
 
-    public Order setRemainingSize(Integer remainingSize) {
+    public FtxOrder setRemainingSize(Integer remainingSize) {
         this.remainingSize = remainingSize;
         return this;
     }
 
-    public PositionSide getSide() {
+    public FtxPositionSide getSide() {
         return side;
     }
 
-    public Order setSide(PositionSide side) {
+    public FtxOrder setSide(FtxPositionSide side) {
         this.side = side;
         return this;
     }
@@ -113,7 +113,7 @@ public class Order {
         return size;
     }
 
-    public Order setSize(Integer size) {
+    public FtxOrder setSize(Integer size) {
         this.size = size;
         return this;
     }
@@ -122,7 +122,7 @@ public class Order {
         return status;
     }
 
-    public Order setStatus(String status) {
+    public FtxOrder setStatus(String status) {
         this.status = status;
         return this;
     }
@@ -131,7 +131,7 @@ public class Order {
         return type;
     }
 
-    public Order setType(OrderType type) {
+    public FtxOrder setType(OrderType type) {
         this.type = type;
         return this;
     }
@@ -140,7 +140,7 @@ public class Order {
         return reduceOnly;
     }
 
-    public Order setReduceOnly(boolean reduceOnly) {
+    public FtxOrder setReduceOnly(boolean reduceOnly) {
         this.reduceOnly = reduceOnly;
         return this;
     }
@@ -149,7 +149,7 @@ public class Order {
         return ioc;
     }
 
-    public Order setIoc(boolean ioc) {
+    public FtxOrder setIoc(boolean ioc) {
         this.ioc = ioc;
         return this;
     }
@@ -158,7 +158,7 @@ public class Order {
         return postOnly;
     }
 
-    public Order setPostOnly(boolean postOnly) {
+    public FtxOrder setPostOnly(boolean postOnly) {
         this.postOnly = postOnly;
         return this;
     }
@@ -167,7 +167,7 @@ public class Order {
         return clientId;
     }
 
-    public Order setClientId(Integer clientId) {
+    public FtxOrder setClientId(Integer clientId) {
         this.clientId = clientId;
         return this;
     }
@@ -176,7 +176,7 @@ public class Order {
         return retryUntilFilled;
     }
 
-    public Order setRetryUntilFilled(boolean retryUntilFilled) {
+    public FtxOrder setRetryUntilFilled(boolean retryUntilFilled) {
         this.retryUntilFilled = retryUntilFilled;
         return this;
     }

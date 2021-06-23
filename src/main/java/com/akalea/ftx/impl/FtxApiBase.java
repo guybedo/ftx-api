@@ -18,7 +18,7 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import com.akalea.ftx.domain.Auth;
+import com.akalea.ftx.domain.FtxCredentials;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import com.google.common.hash.Hashing;
@@ -40,7 +40,7 @@ public class FtxApiBase {
     }
 
     @SuppressWarnings("unchecked")
-    protected <T> HttpEntity signedRequest(String url, HttpMethod method, Object body, Auth auth) {
+    protected <T> HttpEntity signedRequest(String url, HttpMethod method, Object body, FtxCredentials auth) {
 
         String path = url.substring(baseUrl.length());
         long timestamp = System.currentTimeMillis();
