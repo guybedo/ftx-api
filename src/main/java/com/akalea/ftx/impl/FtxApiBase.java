@@ -62,7 +62,7 @@ public class FtxApiBase {
                 })
                 .orElse(null);
         if (bodyPayload != null) {
-            signaturePayload.append(String.valueOf(body));
+            signaturePayload.append(bodyPayload);
         }
         String signature = guavaHmacSha256Base64(signaturePayload.toString(), auth.getApiSecret());
 

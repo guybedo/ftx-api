@@ -4,22 +4,18 @@ import java.time.LocalDateTime;
 
 public class FtxOrder {
 
-    public static enum OrderType {
-            limit, market, stop, trailingStop, takeProfit
-    }
-
-    private Integer       id;
-    private LocalDateTime createdAt;
-    private Integer       filledSize;
-    private String        future;
-    private String        market;
-    private Double        price;
-    private Double        avgFillPrice;
-    private Integer       remainingSize;
-    private FtxPositionSide  side;
-    private Integer       size;
-    private String        status;
-    private OrderType     type;
+    private Long            id;
+    private LocalDateTime   createdAt;
+    private Integer         filledSize;
+    private String          future;
+    private String          market;
+    private Double          price;
+    private Double          avgFillPrice;
+    private Integer         remainingSize;
+    private FtxPositionSide side;
+    private Double          size;
+    private String          status;
+    private FtxOrderType    type;
 
     private boolean reduceOnly;
     private boolean ioc;
@@ -28,11 +24,31 @@ public class FtxOrder {
 
     private Integer clientId;
 
-    public Integer getId() {
+    public static FtxOrder createNewOrder(
+        String market,
+        FtxPositionSide side,
+        FtxOrderType type,
+        Double price,
+        Double size,
+        boolean reduceOnly,
+        boolean ioc,
+        boolean postOnly) {
+        return new FtxOrder()
+            .setMarket(market)
+            .setSide(side)
+            .setType(type)
+            .setPrice(price)
+            .setSize(size)
+            .setReduceOnly(reduceOnly)
+            .setIoc(ioc)
+            .setPostOnly(postOnly);
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public FtxOrder setId(Integer id) {
+    public FtxOrder setId(Long id) {
         this.id = id;
         return this;
     }
@@ -109,11 +125,11 @@ public class FtxOrder {
         return this;
     }
 
-    public Integer getSize() {
+    public Double getSize() {
         return size;
     }
 
-    public FtxOrder setSize(Integer size) {
+    public FtxOrder setSize(Double size) {
         this.size = size;
         return this;
     }
@@ -127,11 +143,11 @@ public class FtxOrder {
         return this;
     }
 
-    public OrderType getType() {
+    public FtxOrderType getType() {
         return type;
     }
 
-    public FtxOrder setType(OrderType type) {
+    public FtxOrder setType(FtxOrderType type) {
         this.type = type;
         return this;
     }

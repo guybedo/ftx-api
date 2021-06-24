@@ -16,6 +16,20 @@ public class FtxMarketsImpl extends FtxApiBase implements Markets {
 
     public List<FtxMarket> getMarkets(FtxCredentials auth) {
         String url = url("api/markets");
+        ResponseEntity<FtxMarketsResponse> resp =
+            restTemplate.exchange(
+                url,
+                HttpMethod.GET,
+                signedRequest(url, HttpMethod.GET, null, auth),
+                new ParameterizedTypeReference<FtxMarketsResponse>() {
+                });
+        return resp
+            .getBody()
+            .getResult();
+    }
+
+    public FtxMarket getMarket(String market, FtxCredentials auth) {
+        String url = url(String.format("api/markets/%s", market));
         ResponseEntity<FtxMarketResponse> resp =
             restTemplate.exchange(
                 url,
@@ -28,7 +42,11 @@ public class FtxMarketsImpl extends FtxApiBase implements Markets {
             .getResult();
     }
 
-    private static class FtxMarketResponse extends FtxResponse<List<FtxMarket>> {
+    private static class FtxMarketsResponse extends FtxResponse<List<FtxMarket>> {
+
+    }
+
+    private static class FtxMarketResponse extends FtxResponse<FtxMarket> {
 
     }
 
