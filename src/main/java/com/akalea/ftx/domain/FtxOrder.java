@@ -1,6 +1,11 @@
 package com.akalea.ftx.domain;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class FtxOrder {
 
@@ -53,6 +58,7 @@ public class FtxOrder {
         return this;
     }
 
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }
