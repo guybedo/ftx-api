@@ -15,7 +15,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class GetAccount {
 
-    private final static Logger logger = LoggerFactory
+    private final static Logger logger =
+        LoggerFactory
             .getLogger(GetAccount.class);
 
     public static void main(String[] args) throws JsonProcessingException {
@@ -24,12 +25,13 @@ public class GetAccount {
         context.refresh();
         FtxApi api = context.getBean(FtxApi.class);
 
-        FtxCredentials credentials = Optional
+        FtxCredentials credentials =
+            Optional
                 .ofNullable(context.getBean(FtxCredentials.class))
                 .orElse(
-                        new FtxCredentials()
-                                .setApiKey("api-key")
-                                .setApiSecret("api-secret"));
+                    new FtxCredentials()
+                        .setApiKey("api-key")
+                        .setApiSecret("api-secret"));
 
         FtxAccount account = api.accounts().getAccount(credentials);
         System.out.println(new ObjectMapper().writeValueAsString(account));
