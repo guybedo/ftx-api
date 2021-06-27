@@ -31,7 +31,7 @@ public class FtxOrdersImpl extends FtxApiBase implements Orders {
 
         ResponseEntity<FtxOrdersResponse> resp = restTemplate.exchange(
             url,
-            HttpMethod.POST,
+            HttpMethod.GET,
             signedRequest(url, HttpMethod.POST, null, auth),
             FtxOrdersResponse.class);
         return resp
