@@ -7,13 +7,16 @@ import org.springframework.stereotype.Service;
 
 import com.akalea.ftx.domain.FtxAccount;
 import com.akalea.ftx.domain.FtxBalance;
+import com.akalea.ftx.domain.FtxCancelOrder;
 import com.akalea.ftx.domain.FtxCredentials;
 import com.akalea.ftx.domain.FtxFutures;
 import com.akalea.ftx.domain.FtxMarket;
+import com.akalea.ftx.domain.FtxMarketHistorical;
 import com.akalea.ftx.domain.FtxOrder;
 import com.akalea.ftx.domain.FtxPosition;
 import com.akalea.ftx.domain.FtxSubAccount;
 import com.akalea.ftx.domain.FtxSubAccountBalance;
+import com.akalea.ftx.domain.FtxTriggerOrder;
 import com.akalea.ftx.impl.FtxWalletImpl;
 import com.akalea.ftx.impl.FtxFuturesImpl;
 import com.akalea.ftx.impl.FtxMarketsImpl;
@@ -101,26 +104,38 @@ public class FtxApi {
 
     public static interface Orders {
         FtxOrder placeOrder(FtxOrder order, FtxCredentials auth);
+        
+        FtxOrder placeTriggerOrder(FtxTriggerOrder order, FtxCredentials auth);
 
         List<FtxOrder> getOrders(String market, FtxCredentials auth);
+        
+        public String cancelAllOrders(FtxCancelOrder cancelOrder, FtxCredentials auth);
     }
 
     public static interface OrdersAuth {
         FtxOrder placeOrder(FtxOrder order);
+        
+        FtxOrder placeTriggerOrder(FtxTriggerOrder order);
 
-        List<FtxOrder> getOrders(String market);
+        List<FtxOrder> getOrders(String market);        
+        
+        public String cancelSlOrder(FtxCancelOrder cancelOrder);
     }
 
     public static interface Markets {
         List<FtxMarket> getMarkets(FtxCredentials auth);
 
         FtxMarket getMarket(String market, FtxCredentials auth);
+        
+        List<FtxMarketHistorical> getHistoricals(String market, FtxCredentials auth);
     }
 
     public static interface MarketsAuth {
         List<FtxMarket> getMarkets();
 
         FtxMarket getMarket(String market);
+        
+        List<FtxMarketHistorical> getHistoricals(String market);
     }
     
     public static interface Futures {
@@ -206,9 +221,15 @@ public class FtxApi {
                     return api.markets.getMarkets(auth);
                 }
 
+                @Override
                 public FtxMarket getMarket(String market) {
                     return api.markets.getMarket(market, auth);
                 }
+
+				@Override
+				public List<FtxMarketHistorical> getHistoricals(String market) {
+					return api.markets.getHistoricals(market, auth);
+				}                
 
             };
         }
@@ -225,6 +246,16 @@ public class FtxApi {
                 public List<FtxOrder> getOrders(String market) {
                     return api.orders.getOrders(market, auth);
                 }
+
+				@Override
+				public String cancelSlOrder(FtxCancelOrder cancelOrder) {
+					return api.orders.cancelAllOrders(cancelOrder, auth);					
+				}
+
+				@Override
+				public FtxOrder placeTriggerOrder(FtxTriggerOrder order) {
+					return api.orders.placeTriggerOrder(order, auth);
+				}
 
             };
         }
