@@ -6,12 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.akalea.ftx.domain.FtxAccount;
+import com.akalea.ftx.domain.FtxBalance;
 import com.akalea.ftx.domain.FtxCredentials;
+import com.akalea.ftx.domain.FtxFutures;
 import com.akalea.ftx.domain.FtxMarket;
 import com.akalea.ftx.domain.FtxOrder;
 import com.akalea.ftx.domain.FtxPosition;
 import com.akalea.ftx.domain.FtxSubAccount;
 import com.akalea.ftx.domain.FtxSubAccountBalance;
+import com.akalea.ftx.impl.FtxWalletImpl;
+import com.akalea.ftx.impl.FtxFuturesImpl;
 import com.akalea.ftx.impl.FtxMarketsImpl;
 import com.akalea.ftx.impl.FtxOrdersImpl;
 
@@ -22,9 +26,13 @@ public class FtxApi {
     @Autowired
     private FtxMarketsImpl markets;
     @Autowired
-    private FtxOrdersImpl orders;
-
-    public AuthenticatedFtxApi withAuth(FtxCredentials auth) {
+    private FtxOrdersImpl orders;   
+    @Autowired
+    private FtxWalletImpl wallet;
+    @Autowired
+    private FtxFuturesImpl futures;
+    
+	public AuthenticatedFtxApi withAuth(FtxCredentials auth) {
         return new AuthenticatedFtxApi()
             .setApi(this)
             .setAuth(auth);
@@ -40,6 +48,14 @@ public class FtxApi {
 
     public Orders orders() {
         return orders;
+    }
+    
+    public Wallet wallet() {
+    	return wallet;
+    }
+    
+    public Futures futures() {
+    	return futures;
     }
 
     public static interface Accounts {
@@ -105,6 +121,26 @@ public class FtxApi {
         List<FtxMarket> getMarkets();
 
         FtxMarket getMarket(String market);
+    }
+    
+    public static interface Futures {
+        List<FtxFutures> getFuturesList(FtxCredentials auth);
+
+        FtxFutures getFutures(String futuresName, FtxCredentials auth);
+    }
+
+    public static interface FuturesAuth {
+        List<FtxFutures> getFutures();
+
+        FtxFutures getFutures(String futuresName);
+    }
+    
+    public static interface Wallet {
+    	List<FtxBalance> getBalances(FtxCredentials auth);
+    }
+    
+    public static interface WalletAuth {
+    	List<FtxBalance> getBalances();
     }
 
     public static class AuthenticatedFtxApi {
@@ -191,6 +227,33 @@ public class FtxApi {
                 }
 
             };
+        }
+        
+        public WalletAuth wallet() {
+            return new WalletAuth() {
+               
+                @Override
+                public List<FtxBalance> getBalances() {
+                    return api.wallet.getBalances(auth);
+                }
+
+            };
+        }
+            
+        public FuturesAuth futures() {
+        	return new FuturesAuth() {
+				
+				@Override
+				public FtxFutures getFutures(String futuresName) {
+					return api.futures.getFutures(futuresName, auth);
+				}
+				
+				@Override
+				public List<FtxFutures> getFutures() {
+					return api.futures.getFuturesList(auth);
+				}
+			};
+        
         }
 
         public FtxApi getApi() {
