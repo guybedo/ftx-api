@@ -18,6 +18,7 @@ import com.akalea.ftx.domain.FtxSubAccount;
 import com.akalea.ftx.domain.FtxSubAccountBalance;
 import com.akalea.ftx.domain.FtxTriggerOrder;
 import com.akalea.ftx.impl.FtxWalletImpl;
+import com.akalea.ftx.impl.FtxAccountsImpl;
 import com.akalea.ftx.impl.FtxFuturesImpl;
 import com.akalea.ftx.impl.FtxMarketsImpl;
 import com.akalea.ftx.impl.FtxOrdersImpl;
@@ -25,7 +26,7 @@ import com.akalea.ftx.impl.FtxOrdersImpl;
 @Service
 public class FtxApi {
     @Autowired
-    private Accounts accounts;
+    private FtxAccountsImpl accounts;
     @Autowired
     private FtxMarketsImpl markets;
     @Autowired
@@ -119,7 +120,7 @@ public class FtxApi {
 
         List<FtxOrder> getOrders(String market);        
         
-        public String cancelSlOrder(FtxCancelOrder cancelOrder);
+        public String cancelAllOrders(FtxCancelOrder cancelOrder);
     }
 
     public static interface Markets {
@@ -248,7 +249,7 @@ public class FtxApi {
                 }
 
 				@Override
-				public String cancelSlOrder(FtxCancelOrder cancelOrder) {
+				public String cancelAllOrders(FtxCancelOrder cancelOrder) {
 					return api.orders.cancelAllOrders(cancelOrder, auth);					
 				}
 
