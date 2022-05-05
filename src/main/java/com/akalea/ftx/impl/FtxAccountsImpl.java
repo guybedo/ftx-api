@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import com.akalea.ftx.FtxApi.Accounts;
 import com.akalea.ftx.domain.FtxAccount;
 import com.akalea.ftx.domain.FtxCredentials;
-import com.akalea.ftx.domain.FtxOrder;
 import com.akalea.ftx.domain.FtxPosition;
 import com.akalea.ftx.domain.FtxSubAccount;
 import com.akalea.ftx.domain.FtxSubAccountBalance;
