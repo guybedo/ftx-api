@@ -10,6 +10,7 @@ public class FtxPosition {
     private Double       maintenanceMarginRequirement;
     private Double       netSize;
     private Double       openSize;
+    private Double		 recentPnl;
     private Double       realizedPnl;
     private Double       shortOrderSize;
     private FtxPositionSide side;
@@ -132,5 +133,13 @@ public class FtxPosition {
         this.unrealizedPnl = unrealizedPnl;
         return this;
     }
+
+	public Double getRecentPnl() {
+		return recentPnl;
+	}
+
+	public void setRecentPnl(Double recentPnl) {
+		this.recentPnl = recentPnl;
+	}
 
 }

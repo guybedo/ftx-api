@@ -42,11 +42,17 @@ public class FtxMarketsImpl extends FtxApiBase implements Markets {
             .getBody()
             .getResult();
     }
-    
+
     public List<FtxMarketHistorical> getHistoricals(String market, FtxCredentials auth) {
-    	String url =
-			url("api/markets/"+market+"/candles?resolution=86400&start_time="
-					+ (System.currentTimeMillis() - ( 1000 * 86400 ))/1000 );
+    	return getHistoricals(market, 86400, 1000, auth);
+    }
+
+    public List<FtxMarketHistorical> getHistoricals(String market, long resolution, long numberOfBars, FtxCredentials auth) {
+    	long currentTimeSecs = System.currentTimeMillis()/1000;
+		String url =
+			url("api/markets/"+market+"/candles?resolution="+resolution+"&start_time="
+					+ (currentTimeSecs - resolution*numberOfBars) +"&end_time="
+					+ currentTimeSecs );
     	
         ResponseEntity<FtxMarketHistoricalsResponse> resp =
             restTemplate.exchange(

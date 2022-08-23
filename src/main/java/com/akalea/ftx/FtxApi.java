@@ -17,11 +17,11 @@ import com.akalea.ftx.domain.FtxPosition;
 import com.akalea.ftx.domain.FtxSubAccount;
 import com.akalea.ftx.domain.FtxSubAccountBalance;
 import com.akalea.ftx.domain.FtxTriggerOrder;
-import com.akalea.ftx.impl.FtxWalletImpl;
 import com.akalea.ftx.impl.FtxAccountsImpl;
 import com.akalea.ftx.impl.FtxFuturesImpl;
 import com.akalea.ftx.impl.FtxMarketsImpl;
 import com.akalea.ftx.impl.FtxOrdersImpl;
+import com.akalea.ftx.impl.FtxWalletImpl;
 
 @Service
 public class FtxApi {
@@ -129,6 +129,8 @@ public class FtxApi {
         FtxMarket getMarket(String market, FtxCredentials auth);
         
         List<FtxMarketHistorical> getHistoricals(String market, FtxCredentials auth);
+
+        List<FtxMarketHistorical> getHistoricals(String market, long resolution, long numberOfBars, FtxCredentials auth);
     }
 
     public static interface MarketsAuth {
@@ -137,6 +139,8 @@ public class FtxApi {
         FtxMarket getMarket(String market);
         
         List<FtxMarketHistorical> getHistoricals(String market);
+
+        List<FtxMarketHistorical> getHistoricals(String market, long resolution, long numberOfBars);
     }
     
     public static interface Futures {
@@ -230,6 +234,11 @@ public class FtxApi {
 				@Override
 				public List<FtxMarketHistorical> getHistoricals(String market) {
 					return api.markets.getHistoricals(market, auth);
+				}
+
+				@Override
+				public List<FtxMarketHistorical> getHistoricals(String market, long resolution, long numberOfBars) {
+					return api.markets.getHistoricals(market, resolution, numberOfBars, auth);
 				}                
 
             };
