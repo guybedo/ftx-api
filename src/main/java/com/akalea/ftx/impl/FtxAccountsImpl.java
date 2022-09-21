@@ -15,6 +15,8 @@ import com.akalea.ftx.domain.FtxCredentials;
 import com.akalea.ftx.domain.FtxPosition;
 import com.akalea.ftx.domain.FtxSubAccount;
 import com.akalea.ftx.domain.FtxSubAccountBalance;
+import com.akalea.ftx.domain.FtxSubAccountTransfer;
+import com.akalea.ftx.domain.FtxSubAccountTransferOrder;
 
 @Service
 public class FtxAccountsImpl extends FtxApiBase implements Accounts {
@@ -122,5 +124,23 @@ public class FtxAccountsImpl extends FtxApiBase implements Accounts {
             extends FtxResponse<List<FtxSubAccountBalance>> {
 
     }
+
+	private static class FtxSubAccountTransferResponse extends FtxResponse<FtxSubAccountTransfer> {
+
+	}
+
+	@Override
+	public FtxSubAccountTransfer subAccountTransfer(String coin, Double size, String source, String destination,
+			FtxCredentials auth) {
+		String url = url("api/subaccounts/transfer");
+		ResponseEntity<FtxSubAccountTransferResponse> resp = restTemplate.exchange(url, HttpMethod.POST,
+				signedRequest(url, HttpMethod.POST,
+						FtxSubAccountTransferOrder.create().setCoin(coin).setSize(size).setSource(source)
+								.setDestination(destination),
+						auth),
+				new ParameterizedTypeReference<FtxSubAccountTransferResponse>() {
+				});
+		return resp.getBody().getResult();
+	}
 
 }

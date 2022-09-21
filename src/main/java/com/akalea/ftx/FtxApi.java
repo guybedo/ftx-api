@@ -16,6 +16,7 @@ import com.akalea.ftx.domain.FtxOrder;
 import com.akalea.ftx.domain.FtxPosition;
 import com.akalea.ftx.domain.FtxSubAccount;
 import com.akalea.ftx.domain.FtxSubAccountBalance;
+import com.akalea.ftx.domain.FtxSubAccountTransfer;
 import com.akalea.ftx.domain.FtxTriggerOrder;
 import com.akalea.ftx.impl.FtxAccountsImpl;
 import com.akalea.ftx.impl.FtxFuturesImpl;
@@ -71,6 +72,9 @@ public class FtxApi {
                 String nickname,
                 FtxCredentials auth);
 
+		FtxSubAccountTransfer subAccountTransfer(String coin, Double size, String source, String destination,
+				FtxCredentials auth);
+
         Double getFreeCollateral(String coin, FtxCredentials auth);
 
         Double getMainAccountFreeCollateral(String coin, FtxCredentials auth);
@@ -91,6 +95,8 @@ public class FtxApi {
         List<FtxSubAccount> getSubAccounts();
 
         List<FtxSubAccountBalance> getSubAccountBalances(String nickname);
+
+		FtxSubAccountTransfer subAccountTransfer(String coin, Double size, String source, String destination);
 
         Double getFreeCollateral(String coin);
 
@@ -214,6 +220,12 @@ public class FtxApi {
                 public List<FtxPosition> getPositions(String market) {
                     return api.accounts.getPositions(market, auth);
                 }
+
+				@Override
+				public FtxSubAccountTransfer subAccountTransfer(String coin, Double size, String source,
+						String destination) {
+					return api.accounts.subAccountTransfer(coin, size, source, destination, auth);
+				}
 
             };
         }
