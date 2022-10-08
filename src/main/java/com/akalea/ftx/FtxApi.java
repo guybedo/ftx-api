@@ -6,25 +6,38 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.akalea.ftx.domain.FtxAccount;
+import com.akalea.ftx.domain.FtxBalance;
+import com.akalea.ftx.domain.FtxCancelOrder;
 import com.akalea.ftx.domain.FtxCredentials;
+import com.akalea.ftx.domain.FtxFutures;
 import com.akalea.ftx.domain.FtxMarket;
+import com.akalea.ftx.domain.FtxMarketHistorical;
 import com.akalea.ftx.domain.FtxOrder;
 import com.akalea.ftx.domain.FtxPosition;
 import com.akalea.ftx.domain.FtxSubAccount;
 import com.akalea.ftx.domain.FtxSubAccountBalance;
+import com.akalea.ftx.domain.FtxSubAccountTransfer;
+import com.akalea.ftx.domain.FtxTriggerOrder;
+import com.akalea.ftx.impl.FtxAccountsImpl;
+import com.akalea.ftx.impl.FtxFuturesImpl;
 import com.akalea.ftx.impl.FtxMarketsImpl;
 import com.akalea.ftx.impl.FtxOrdersImpl;
+import com.akalea.ftx.impl.FtxWalletImpl;
 
 @Service
 public class FtxApi {
     @Autowired
-    private Accounts accounts;
+    private FtxAccountsImpl accounts;
     @Autowired
     private FtxMarketsImpl markets;
     @Autowired
-    private FtxOrdersImpl orders;
-
-    public AuthenticatedFtxApi withAuth(FtxCredentials auth) {
+    private FtxOrdersImpl orders;   
+    @Autowired
+    private FtxWalletImpl wallet;
+    @Autowired
+    private FtxFuturesImpl futures;
+    
+	public AuthenticatedFtxApi withAuth(FtxCredentials auth) {
         return new AuthenticatedFtxApi()
             .setApi(this)
             .setAuth(auth);
@@ -41,6 +54,14 @@ public class FtxApi {
     public Orders orders() {
         return orders;
     }
+    
+    public Wallet wallet() {
+    	return wallet;
+    }
+    
+    public Futures futures() {
+    	return futures;
+    }
 
     public static interface Accounts {
         FtxAccount getAccount(FtxCredentials auth);
@@ -50,6 +71,9 @@ public class FtxApi {
         List<FtxSubAccountBalance> getSubAccountBalances(
                 String nickname,
                 FtxCredentials auth);
+
+		FtxSubAccountTransfer subAccountTransfer(String coin, Double size, String source, String destination,
+				FtxCredentials auth);
 
         Double getFreeCollateral(String coin, FtxCredentials auth);
 
@@ -72,6 +96,8 @@ public class FtxApi {
 
         List<FtxSubAccountBalance> getSubAccountBalances(String nickname);
 
+		FtxSubAccountTransfer subAccountTransfer(String coin, Double size, String source, String destination);
+
         Double getFreeCollateral(String coin);
 
         Double getMainAccountFreeCollateral(String coin);
@@ -85,26 +111,62 @@ public class FtxApi {
 
     public static interface Orders {
         FtxOrder placeOrder(FtxOrder order, FtxCredentials auth);
+        
+        FtxOrder placeTriggerOrder(FtxTriggerOrder order, FtxCredentials auth);
 
         List<FtxOrder> getOrders(String market, FtxCredentials auth);
+        
+        public String cancelAllOrders(FtxCancelOrder cancelOrder, FtxCredentials auth);
     }
 
     public static interface OrdersAuth {
         FtxOrder placeOrder(FtxOrder order);
+        
+        FtxOrder placeTriggerOrder(FtxTriggerOrder order);
 
-        List<FtxOrder> getOrders(String market);
+        List<FtxOrder> getOrders(String market);        
+        
+        public String cancelAllOrders(FtxCancelOrder cancelOrder);
     }
 
     public static interface Markets {
         List<FtxMarket> getMarkets(FtxCredentials auth);
 
         FtxMarket getMarket(String market, FtxCredentials auth);
+        
+        List<FtxMarketHistorical> getHistoricals(String market, FtxCredentials auth);
+
+        List<FtxMarketHistorical> getHistoricals(String market, long resolution, long numberOfBars, FtxCredentials auth);
     }
 
     public static interface MarketsAuth {
         List<FtxMarket> getMarkets();
 
         FtxMarket getMarket(String market);
+        
+        List<FtxMarketHistorical> getHistoricals(String market);
+
+        List<FtxMarketHistorical> getHistoricals(String market, long resolution, long numberOfBars);
+    }
+    
+    public static interface Futures {
+        List<FtxFutures> getFuturesList(FtxCredentials auth);
+
+        FtxFutures getFutures(String futuresName, FtxCredentials auth);
+    }
+
+    public static interface FuturesAuth {
+        List<FtxFutures> getFutures();
+
+        FtxFutures getFutures(String futuresName);
+    }
+    
+    public static interface Wallet {
+    	List<FtxBalance> getBalances(FtxCredentials auth);
+    }
+    
+    public static interface WalletAuth {
+    	List<FtxBalance> getBalances();
     }
 
     public static class AuthenticatedFtxApi {
@@ -159,6 +221,12 @@ public class FtxApi {
                     return api.accounts.getPositions(market, auth);
                 }
 
+				@Override
+				public FtxSubAccountTransfer subAccountTransfer(String coin, Double size, String source,
+						String destination) {
+					return api.accounts.subAccountTransfer(coin, size, source, destination, auth);
+				}
+
             };
         }
 
@@ -170,9 +238,20 @@ public class FtxApi {
                     return api.markets.getMarkets(auth);
                 }
 
+                @Override
                 public FtxMarket getMarket(String market) {
                     return api.markets.getMarket(market, auth);
                 }
+
+				@Override
+				public List<FtxMarketHistorical> getHistoricals(String market) {
+					return api.markets.getHistoricals(market, auth);
+				}
+
+				@Override
+				public List<FtxMarketHistorical> getHistoricals(String market, long resolution, long numberOfBars) {
+					return api.markets.getHistoricals(market, resolution, numberOfBars, auth);
+				}                
 
             };
         }
@@ -190,7 +269,44 @@ public class FtxApi {
                     return api.orders.getOrders(market, auth);
                 }
 
+				@Override
+				public String cancelAllOrders(FtxCancelOrder cancelOrder) {
+					return api.orders.cancelAllOrders(cancelOrder, auth);					
+				}
+
+				@Override
+				public FtxOrder placeTriggerOrder(FtxTriggerOrder order) {
+					return api.orders.placeTriggerOrder(order, auth);
+				}
+
             };
+        }
+        
+        public WalletAuth wallet() {
+            return new WalletAuth() {
+               
+                @Override
+                public List<FtxBalance> getBalances() {
+                    return api.wallet.getBalances(auth);
+                }
+
+            };
+        }
+            
+        public FuturesAuth futures() {
+        	return new FuturesAuth() {
+				
+				@Override
+				public FtxFutures getFutures(String futuresName) {
+					return api.futures.getFutures(futuresName, auth);
+				}
+				
+				@Override
+				public List<FtxFutures> getFutures() {
+					return api.futures.getFuturesList(auth);
+				}
+			};
+        
         }
 
         public FtxApi getApi() {

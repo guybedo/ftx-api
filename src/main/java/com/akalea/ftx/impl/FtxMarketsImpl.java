@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.akalea.ftx.FtxApi.Markets;
 import com.akalea.ftx.domain.FtxCredentials;
 import com.akalea.ftx.domain.FtxMarket;
+import com.akalea.ftx.domain.FtxMarketHistorical;
 
 @Service
 public class FtxMarketsImpl extends FtxApiBase implements Markets {
@@ -42,11 +43,38 @@ public class FtxMarketsImpl extends FtxApiBase implements Markets {
             .getResult();
     }
 
+    public List<FtxMarketHistorical> getHistoricals(String market, FtxCredentials auth) {
+    	return getHistoricals(market, 86400, 1000, auth);
+    }
+
+    public List<FtxMarketHistorical> getHistoricals(String market, long resolution, long numberOfBars, FtxCredentials auth) {
+    	long currentTimeSecs = System.currentTimeMillis()/1000;
+		String url =
+			url("api/markets/"+market+"/candles?resolution="+resolution+"&start_time="
+					+ (currentTimeSecs - resolution*numberOfBars) +"&end_time="
+					+ currentTimeSecs );
+    	
+        ResponseEntity<FtxMarketHistoricalsResponse> resp =
+            restTemplate.exchange(
+                url,
+                HttpMethod.GET,
+                signedRequest(url, HttpMethod.GET, null, auth),
+                new ParameterizedTypeReference<FtxMarketHistoricalsResponse>() {
+                });
+        return resp
+            .getBody()
+            .getResult();
+    }
+
     private static class FtxMarketsResponse extends FtxResponse<List<FtxMarket>> {
 
     }
 
     private static class FtxMarketResponse extends FtxResponse<FtxMarket> {
+
+    }
+    
+    private static class FtxMarketHistoricalsResponse extends FtxResponse<List<FtxMarketHistorical>> {
 
     }
 
